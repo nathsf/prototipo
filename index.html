@@ -1,0 +1,531 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+	<title>Sistema Web | His</title>
+
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="Content/plugins/fontawesome-free/css/all.min.css">
+	<!-- Ionicons -->
+	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<!-- Tempusdominus Bbootstrap 4 -->
+	<link rel="stylesheet" href="Content/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+	<!-- iCheck -->
+	<link rel="stylesheet" href="Content/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+	<!-- JQVMap -->
+	<link rel="stylesheet" href="Content/plugins/jqvmap/jqvmap.min.css">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="Content/dist/css/adminlte.min.css">
+	<!-- overlayScrollbars -->
+	<link rel="stylesheet" href="Content/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+	<!-- Daterange picker -->
+	<link rel="stylesheet" href="Content/plugins/daterangepicker/daterangepicker.css">
+	<!-- summernote -->
+	<link rel="stylesheet" href="Content/plugins/summernote/summernote-bs4.css">
+
+	<!-- buscar -->
+	<link rel="stylesheet" href="Content/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+	<link href="css/stylesformulario.css" rel="stylesheet" />
+
+	<!-- Google Font: Source Sans Pro -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+	<script src="lib/jquery/dist/jquery.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/sweetalert.js"></script>
+
+	<style type="text/css">
+		.user-panel img {
+			height: auto;
+			width: 3.1rem;
+		}
+	</style>
+
+	<style type="text/css">
+		.user-panel .info {
+			display: inline-block;
+			padding: 20px 5px 5px 10px;
+		}
+	</style>
+
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+	<div class="wrapper">
+
+		<!-- Navbar -->
+
+		<nav class="main-header navbar navbar-expand navbar-light" style="background-color: #f4f6f9;border-bottom:#f4f6f9">
+			<!-- Left navbar links -->
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars" style="color:#0f5493"></i></a>
+				</li>
+
+			</ul>
+
+			<!-- SEARCH FORM -->
+			<!-- Right navbar links -->
+			<ul class="navbar-nav ml-auto">
+
+				<!-- Messages Dropdown Menu -->
+				<!-- Notifications Dropdown Menu -->
+				<div class="">
+					<button type="button" class="btn btn-secondary dropdown-toggle hidden-sm-down" style="background: none;
+					border: none;color: #0f5493;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<img style="width:24px;border-radius:50%;border:2px solid #0f5493;margin-right:9px;" src="/images/profile.png" /><span class="bold" style="color:#0f5493">Bienvenido, Rafael Sanchez</span>
+				</button>
+				<div class="dropdown-menu dropdown-menu-right">
+					<button class="dropdown-item" type="button"><img style="margin-right: 9px;" src="images/back.png" /><span> Panel </span></button>
+					<button class="dropdown-item" type="button"><img style="margin-right: 9px;" src="images/off.png" /><span> Cerrar Sesion </span></button>
+
+				</div>
+			</div>
+
+		</ul>
+	</nav>
+
+	<!-- /.navbar -->
+	<!-- Main Sidebar Container -->
+	<aside class="main-sidebar sidebar-dark-primary elevation-4">
+		<!-- Brand Logo -->
+		<!-- Sidebar -->
+		<div class="sidebar">
+                <!-- Sidebar user panel (optional)
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="/Content/dist/img/avatar5.png" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Rafael Sanchez</a>
+                    </div>
+                </div>
+            -->
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+            	<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                        	with font-awesome or any other icon font library -->
+                        	<li style="margin-bottom: 1rem;">
+                        		<a href="index3.html" class="brand-link">
+                        			<img src="Content/dist/img/cem2.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                        			style="opacity: .8">
+                        			<span class="brand-text font-weight-light"><font face="Kaushan Script, coursive  ">HIS</font></span>
+
+                        		</a>
+                        	</li>
+                        	<li class="hidden-sm-up">
+                        		<a href="#" class="nav-link ">
+                        			<img style="width:35px;border-radius:50%;border:2px solid white;margin-right:9px;" src="images/profile.png" /><span style="font-weight: bold;
+                        			color:white;"> Rafael Sanchez</span>
+                        		</a>
+                        	</li>
+                        	<li class="nav-item">
+                        		<a class="nav-link " href="/Persona">
+                        			<i class="nav-icon fas fa-user-injured"></i>
+                        			<p>
+                        				Gestionar Personal
+
+                        			</p>
+                        		</a>
+                        	</li>
+                        	<li class="nav-item">
+                        		<a class="nav-link " href="/Cronograma">
+                        			<i class="nav-icon fas fa-user-injured"></i>
+                        			<p>
+                        				Horario de Medico
+
+                        			</p>
+                        		</a>
+                        	</li>
+
+                        	<li class="nav-item">
+                        		<a class="nav-link " href="/Paciente">
+                        			<i class="nav-icon fas fa-notes-medical"></i>
+                        			<p>
+                        				Reserva de Citas
+
+                        			</p>
+                        		</a>
+                        	</li>
+
+                        	<li class="nav-item">
+                        		<a class="nav-link " href="/Paciente/AdmicionMedico">
+                        			<i class="nav-icon fas fa-notes-medical"></i>
+                        			<p>
+                        				Listado de Citas
+
+                        			</p>
+                        		</a>
+                        	</li>
+
+
+                        	<li class="nav-item">
+                        		<a class="nav-link " href="/Tablas">
+                        			<i class="nav-icon far fa-calendar-alt"></i>
+                        			<p>
+                        				Gestion de tablas
+
+                        			</p>
+                        		</a>
+                        	</li>
+                        	<li class="hidden-sm-up nav-item">
+                        		<a href="#" class="nav-link ">
+                        			<i class="far fa-times-circle"></i>
+                        			<p>
+                        				Gestion de tablas
+
+                        			</p>
+                        		</a>
+                        	</li>
+                        	<li class="hidden-sm-up nav-item">
+                        		<a href="#" class="nav-link ">
+                        			<i class="far fa-times-circle"></i> <p>
+                        				Gestion de tablas
+
+                        			</p>
+                        		</a>
+                        	</li>
+
+
+                        </ul>
+                    </nav>
+                    <!-- /.sidebar-menu -->
+                </div>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+            	<!-- Content Header (Page header) -->
+            	<div class="content-header">
+            		<div class="card-cem container">
+            			<div class="row mb-2">
+            				<div class="col-sm-6">
+            					<h1 class="m-0 text-dark"></h1>
+            				</div><!-- /.col -->
+            				<div class="col-sm-12" style="padding: 2rem;">
+            					<div class="layout-content">
+            						<div class="layout-content-body">
+
+
+            							<div class="container">
+            								<div class="row">
+            									<div class="col-sm-12 left" style="height: 50px;">
+            										<div class="card card-primary card-his">
+            											<div class="card-header card-shadow">
+            												<h2>Registro de citas</h2>
+            											</div>
+            										</div>
+            									</div>
+            								</div>
+            								<div class="row">
+
+
+            									<div class="col-sm-12">
+
+
+            										<form action="/Cronograma/Create" id="frmcrearcronograma" method="post" novalidate="novalidate">	<div class="row pb-2">
+            											<div class="col-sm-3">
+            												<div class="row">
+            													<div class="col-sm-11">
+            														<div class="input-style">
+            															<label class="form-label">Medico</label>
+
+            															<select class="form-control" data-cascade-combo="#stypes" data-cascade-combo-param-name="id" data-cascade-combo-source="/Cronograma/GetEspecialidad" data-val="true" data-val-required="Seleccione un medico" id="idMedico" name="idMedico"><option value="">Seleccionar</option>
+            																<option value="1">xavi saens galvez</option>
+            																<option value="2">john Mendoza Mendoza</option>
+            																<option value="3">sophia Ruiz Ruiz</option>
+            																<option value="4">Lady Hidalgo Hidalgo</option>
+            																<option value="5">julius franco net</option>
+            																<option value="6">bertol franco palacios</option>
+            																<option value="7">erick palacios franco</option>
+            																<option value="8">tom tomcat guerra</option>
+            															</select>
+            															<span class="field-validation-valid text-danger" data-valmsg-for="idMedico" data-valmsg-replace="true"></span>
+            														</div>
+            													</div>
+            												</div>
+            											</div>
+            											<div class="col-sm-3">
+            												<div class="row">
+            													<div class="col-sm-11">
+            														<div class="input-style">
+            															<label class="form-label">Especialidad</label>
+            															<select class="form-control" data-val="true" data-val-required="Seleccione una especialidad" id="stypes" name="idEspecialidad"><option value="">Seleccionar</option>
+            																<option value="126">ALERGIA E INMUNOLOGIA</option>
+            																<option value="127">CARDIOLOGIA</option>
+            																<option value="128">CIRUGIA ONCOLOGICA DE CABEZA Y CUELLO</option>
+            																<option value="129">CIRUGIA DE TORAX Y CARDIOVASCULAR</option>
+            																<option value="130">CIRUGIA GENERAL Y LAPAROSCOPICA</option>
+            																<option value="131">CIRUGIA GENERAL Y ONCOLOGICA</option>
+            																<option value="132">DERMATOLOGIA</option>
+            																<option value="133">RADIOLOGIA</option>
+            																<option value="134">ENDOCRINOLOGIA</option>
+            																<option value="135">ENFERMERIA</option>
+            																<option value="136">GASTROENTEROLOGIA</option>
+            																<option value="137">GERIATRIA</option>
+            																<option value="138">GINECOLOGIA Y OBSTETRICIA</option>
+            																<option value="139">GINECOLOGIA ONCOLOGICA</option>
+            																<option value="140">HEMATOLOGIA</option>
+            																<option value="141">MASTOLOGIA </option>
+            																<option value="142">MEDICINA FISICA Y REHABILITACION</option>
+            																<option value="143">MEDICINA GENERAL</option>
+            																<option value="144">MEDICINA INTERNA</option>
+            																<option value="145">NEFROLOGIA</option>
+            																<option value="146">NEUMOLOGIA</option>
+            																<option value="147">NEUROCIRUGIA</option>
+            																<option value="148">NEUROLOGIA</option>
+            																<option value="149">NUTRICION Y DIETETICA</option>
+            																<option value="150">ODONTOLOGIA INTEGRAL</option>
+            															</select>
+            															<span class="field-validation-valid text-danger" data-valmsg-for="idEspecialidad" data-valmsg-replace="true"></span>
+            														</div>
+            													</div>
+            												</div>
+            											</div>
+            											<div class="col-sm-3">
+            												<div class="row">
+            													<div class="col-sm-11">
+            														<div class="input-style">
+            															<label class="form-label">Consultorio</label>
+            															<select class="form-control" data-val="true" data-val-required="Seleccione un consultorio" id="idConsultorio" name="idConsultorio"><option value="">Seleccionar</option>
+            																<option value="94">CONSULTORIO1</option>
+            																<option value="95">CONSULTORIO2</option>
+            																<option value="96">CONSULTORIO3</option>
+            																<option value="97">CONSULTORIO4</option>
+            																<option value="98">CONSULTORIO5</option>
+            																<option value="99">CONSULTORIO6</option>
+            																<option value="100">CONSULTORIO7</option>
+            																<option value="101">CONSULTORIO8</option>
+            																<option value="102">CONSULTORIO9</option>
+            																<option value="103">CONSULTORIO10</option>
+            																<option value="104">CONSULTORIO11</option>
+            																<option value="105">CONSULTORIO12</option>
+            																<option value="106">CONSULTORIO13</option>
+            																<option value="107">CONSULTORIO14</option>
+            																<option value="108">CONSULTORIO15</option>
+            																<option value="174">CONSULTORIO16</option>
+            																<option value="175">CONSULTORIO17</option>
+            																<option value="176">CONSULTORIO18</option>
+            																<option value="177">CONSULTORIO19</option>
+            																<option value="178">CONSULTORIO20</option>
+            																<option value="179">CONSULTORIO21</option>
+            																<option value="180">CONSULTORIO22</option>
+            																<option value="181">CONSULTORIO23</option>
+            																<option value="182">CONSULTORIO24</option>
+            																<option value="183">CONSULTORIO25</option>
+            																<option value="184">CONSULTORIO26</option>
+            																<option value="185">CONSULTORIO27</option>
+            																<option value="186">CONSULTORIO28</option>
+            																<option value="187">CONSULTORIO29</option>
+            															</select>
+            															<span class="field-validation-valid text-danger" data-valmsg-for="idConsultorio" data-valmsg-replace="true"></span>
+            														</div>
+            													</div>
+            												</div>
+            											</div>
+            											<div class="col-sm-3">
+            												<div class="row">
+            													<div class="col-sm-11">
+            														<div class="input-style">
+            															<label class="form-label">Fecha </label>
+            															<input class="form-control" data-val="true" data-val-required="Seleccione la fecha de inicio" id="fechaIni" name="fechaIni" type="Date" value="">
+            															<span class="field-validation-valid text-danger" data-valmsg-for="fechaIni" data-valmsg-replace="true"></span>
+
+            														</div>
+
+            													</div>
+            												</div>
+            											</div>
+            										</div>
+            										<div class="row pb-2 text-right">
+            											<div class="col-sm-12">
+            												<button class="btn btn-primary mt-sm-2" id="Crear">Guardar</button>
+            											</div>
+            										</div>
+            										<input name="__RequestVerificationToken" type="hidden" value="CfDJ8EZArBrd5jZLg1_sLSb7wTB3o5UTO2OevqZbEioNFohXYsrsXNItNJEpW_v1hsqkrCmhlCIjdGrLP9j5tPYSVFfdDqi7IWRsrd65fclg4eRx2ek5sQQH7DEUVTSY5DMc7Pk9L89Uo1VW7J9sT6Q3-k0"></form><script src="/js/comboaninado.js"></script>
+
+
+
+            										<div class="row pt-3">
+            											<div class="col-sm-12">
+            												<table class="table table-responsive table-bordered table-hover text-center" id="cronogramagrid">
+            													<thead>
+            														<tr>
+            															<th>N°</th>
+            															<th>Hora</th>
+            															<th>Historia</th>
+            															<th>Confirmado</th>
+            															<th>Consultorio</th>
+            															<th>Paciente</th>
+            															<th>Acciones</th>
+            															<th>Acciones</th>
+            															<th>Acciones</th>
+            															<th>Acciones</th>
+            														</tr>
+            													</thead>
+            													<tbody>
+            														<tr>
+            															<td>1</td>
+            															<td>2020-07-08</td>
+            															<td>2020-07-07</td>
+            															<td>4:00</td>
+            															<td>3:00</td>
+            															<td>PROCEDIMIENTO</td>
+            															<td>
+            																<button type="submit" class="edit btn btn-primary"><i class="fas fa-edit"></i></button>
+            																<button type="submit" class="delete btn btn-danger"><i class="fas fa-minus"></i></button>
+            															</td>
+            														</tr>
+            														<tr>
+            															<td>2</td>
+            															<td>2020-07-09</td>
+            															<td>2020-07-10</td>
+            															<td>10:00</td>
+            															<td>11:00</td>
+            															<td>PROCEDIMIENTO</td>
+            															<td>
+            																<button type="submit" class="edit btn btn-primary"><i class="fas fa-edit"></i></button>
+            																<button type="submit" class="delete btn btn-danger"><i class="fas fa-minus"></i></button>
+            															</td>
+            														</tr>
+            														<tr>
+            															<td>3</td>
+            															<td>2020-07-09</td>
+            															<td>2020-07-09</td>
+            															<td>10:00</td>
+            															<td>11:00</td>
+            															<td>PROCEDIMIENTO</td>
+            															<td>
+            																<button type="submit" class="edit btn btn-primary"><i class="fas fa-edit"></i></button>
+            																<button type="submit" class="delete btn btn-danger"><i class="fas fa-minus"></i></button>
+            															</td>
+            														</tr>
+            														<tr>
+            															<td>4</td>
+            															<td>2020-07-10</td>
+            															<td>2020-07-10</td>
+            															<td>3:00</td>
+            															<td>4:00</td>
+            															<td>PROCEDIMIENTO</td>
+            															<td>
+            																<button type="submit" class="edit btn btn-primary"><i class="fas fa-edit"></i></button>
+            																<button type="submit" class="delete btn btn-danger"><i class="fas fa-minus"></i></button>
+            															</td>
+            														</tr>
+            													</tbody>
+            												</table>
+            											</div>
+            										</div>
+            									</div>
+
+            								</div>
+            							</div>
+            						</div>
+
+            						<div class="modal fade" id="modalcitas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+            						</div>
+            						<div class="modal fade" id="modalreprogramar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+            						</div>
+
+            						<div id="modalcronograma" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+            						</div>
+            						<div id="modaldetallecro" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+            						</div>
+            						<div id="modalanular" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+            						</div>
+            						<div id="modaldetalle" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+            						</div>
+            						<script src="js/cargavistaparcial.js"></script>
+            						<script src="js/combosaninadoscitas.js"></script>
+
+
+            						<input type="hidden" id="hdnBaseUrl" value="" />
+            					</div>
+            				</div>
+
+            			</div><!-- /.col -->
+            		</div><!-- /.row -->
+            	</div><!-- /.container-fluid -->
+            </div>
+
+
+            <!-- Main content -->
+            <!-- /.Left col -->
+            <!-- right col (We are only adding the ID to make the widgets sortable)-->
+            <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+        <!-- /.content -->
+        <!-- /.content-wrapper -->
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+        	<!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+
+
+    <!-- ./wrapper -->
+    <!-- jQuery -->
+    <script src="Content/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="Content/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+    	$.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="Content/plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="Content/plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="Content/plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="Content/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="Content/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="Content/plugins/moment/moment.min.js"></script>
+    <script src="Content/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="Content/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="Content/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="Content/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="Content/dist/js/adminlte.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="Content/dist/js/pages/dashboard.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="Content/dist/js/demo.js"></script>
+
+    <!--buscar-->
+    <script src="Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Content/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="Content/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+    <script src="js/input.js"></script>
+
+
+
+    <script src="lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+
+</body>
+</html>

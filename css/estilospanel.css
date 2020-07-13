@@ -1,0 +1,157 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;600&display=swap');
+body {
+	font-family: 'Signika', sans-serif;
+}
+.panel-container {
+	background: url("../images/fondopanel.png");
+	height: 83vh;
+	background-size: cover;
+	padding: 4rem 0;
+}
+	.panel-container .container {
+		padding: 0;
+	}
+
+.item-panel {
+	height: 380px;
+	color: white;
+	padding: 2rem;
+	text-align: center;
+	background-size: cover;
+}
+	.item-panel img {
+		width: 70px;
+		padding-top: 100px;
+	}
+.pd-0 {
+		padding: 0 !important;
+	}
+.panel-container a {
+	text-decoration:none;
+	color:white;
+}
+
+.item-panel h2 {
+	margin-top: 1rem;
+	font-size: 1.3rem;
+}
+
+.ambulatoria{
+	background: url("../images/img-ambulatoria.png");
+}
+.hospital {
+	background: url("../images/img-hospitalaria.png");
+}
+.emergencia {
+	background: url("../images/img-emergencia.png");
+}
+.caja {
+	background: url("../images/img-caja.png");
+}
+.reportes {
+	background: url("../images/img-reportes.png");
+}
+@media (min-width:992px) {
+	.item-panel {
+		transition: all 0.3s ease-in-out;
+	}
+
+		.item-panel:hover {
+			transform: scale(1.2);
+			z-index: 300;
+			position: relative;
+		}
+}
+@media (max-width:991px) and (min-width:576px){
+	
+
+	.inverse-1 {
+		background: #302e7d!important;
+	}
+	.inverse-2 {
+		background: #00aee5 !important;
+	}
+}
+@media(max-width:991px) {
+	.color-1 {
+		background: #00aee5;
+	}
+
+	.color-2 {
+		background: #302e7d;
+	}
+	.panel-container {
+		padding: 1rem 20%;
+	}
+
+	.item-panel {
+		height: 176px;
+		padding: 0;
+	}
+
+		.item-panel h2 {
+			font-size: 1.1rem;
+		}
+
+		.item-panel img {
+			width: 60px;
+			padding-top: 30px;
+		}
+}
+@media(max-width:650px) {
+	.panel-container {
+		padding: 0 15%;
+	}
+	.item-panel {
+		height: 180px;
+		padding: 0 2rem;
+
+	}
+	.item-panel img {
+			width: 50px;
+		}
+		.item-panel h2 {
+			font-size:1rem;
+		}
+}
+	@media(max-width:575px) {
+		.headerPanel .imglogo {
+			width: 170px;
+		}
+
+		.headerPanel {
+			margin-left: 1rem;
+		}
+
+		.panel-container {
+			padding: 0 10%;
+		}
+
+		.item-panel {
+			height: 100px;
+			padding: 7% 9% 0;
+			text-align: left;
+		}
+
+			.item-panel img {
+				padding-top: 0px;
+				width: 42px;
+				display: inline;
+			}
+
+			.item-panel h2 {
+				display: inline;
+				padding-left: 5px;
+			}
+	}
+@media(max-width:480px) {
+	.item-panel {
+		height: 100px;
+		padding: 9% 9% 0;
+	}
+}
+	@media(max-width:320px) {
+		.item-panel h2 {
+			font-size: 1rem;
+		}
+	}
