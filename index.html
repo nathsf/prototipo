@@ -219,7 +219,7 @@
 
             							<div class="container">
             								<div class="row">
-            									<div class="col-sm-12 left" style="height: 50px;">
+            									<div class="col-sm-12 left" style="height: 20px;">
             										<div class="card card-primary card-his">
             											<div class="card-header card-shadow">
             												<h2>Registro de citas</h2>
@@ -229,10 +229,20 @@
             								</div>
             								<div class="row">
 
+            									<div class="col-sm-12" >
+            										<div class="row pb-2 text-left">
+            											<div class="col-sm-12">
+            												<button class="btn btn-primary mt-4 pt-1" id="Crear">CAJA</button>
+            												<button class="btn btn-primary mt-4 pt-1" id="Crear">CITA</button>
+            												<button class="btn btn-primary mt-4 pt-1" id="Crear">laboratorio</button>
+            												<button class="btn btn-primary mt-4 pt-1" id="Crear">imagenes</button>
+            												<button class="btn btn-primary mt-4 pt-1" id="Crear" style="display:none">Listado Paciente</button>
+            												<button class="btn btn-primary mt-4 pt-1" id="Crear">Interconsulta</button>
+            											</div>
 
-            									<div class="col-sm-12">
-
-
+            										</div>
+            									</div>
+            									<div class="col-sm-8">
             										<form action="/Cronograma/Create" id="frmcrearcronograma" method="post" novalidate="novalidate">	<div class="row pb-2">
             											<div class="col-sm-3">
             												<div class="row">
@@ -292,47 +302,7 @@
             													</div>
             												</div>
             											</div>
-            											<div class="col-sm-3">
-            												<div class="row">
-            													<div class="col-sm-11">
-            														<div class="input-style">
-            															<label class="form-label">Consultorio</label>
-            															<select class="form-control" data-val="true" data-val-required="Seleccione un consultorio" id="idConsultorio" name="idConsultorio"><option value="">Seleccionar</option>
-            																<option value="94">CONSULTORIO1</option>
-            																<option value="95">CONSULTORIO2</option>
-            																<option value="96">CONSULTORIO3</option>
-            																<option value="97">CONSULTORIO4</option>
-            																<option value="98">CONSULTORIO5</option>
-            																<option value="99">CONSULTORIO6</option>
-            																<option value="100">CONSULTORIO7</option>
-            																<option value="101">CONSULTORIO8</option>
-            																<option value="102">CONSULTORIO9</option>
-            																<option value="103">CONSULTORIO10</option>
-            																<option value="104">CONSULTORIO11</option>
-            																<option value="105">CONSULTORIO12</option>
-            																<option value="106">CONSULTORIO13</option>
-            																<option value="107">CONSULTORIO14</option>
-            																<option value="108">CONSULTORIO15</option>
-            																<option value="174">CONSULTORIO16</option>
-            																<option value="175">CONSULTORIO17</option>
-            																<option value="176">CONSULTORIO18</option>
-            																<option value="177">CONSULTORIO19</option>
-            																<option value="178">CONSULTORIO20</option>
-            																<option value="179">CONSULTORIO21</option>
-            																<option value="180">CONSULTORIO22</option>
-            																<option value="181">CONSULTORIO23</option>
-            																<option value="182">CONSULTORIO24</option>
-            																<option value="183">CONSULTORIO25</option>
-            																<option value="184">CONSULTORIO26</option>
-            																<option value="185">CONSULTORIO27</option>
-            																<option value="186">CONSULTORIO28</option>
-            																<option value="187">CONSULTORIO29</option>
-            															</select>
-            															<span class="field-validation-valid text-danger" data-valmsg-for="idConsultorio" data-valmsg-replace="true"></span>
-            														</div>
-            													</div>
-            												</div>
-            											</div>
+            											
             											<div class="col-sm-3">
             												<div class="row">
             													<div class="col-sm-11">
@@ -346,12 +316,9 @@
             													</div>
             												</div>
             											</div>
+            											
             										</div>
-            										<div class="row pb-2 text-right">
-            											<div class="col-sm-12">
-            												<button class="btn btn-primary mt-sm-2" id="Crear">Guardar</button>
-            											</div>
-            										</div>
+
             										<input name="__RequestVerificationToken" type="hidden" value="CfDJ8EZArBrd5jZLg1_sLSb7wTB3o5UTO2OevqZbEioNFohXYsrsXNItNJEpW_v1hsqkrCmhlCIjdGrLP9j5tPYSVFfdDqi7IWRsrd65fclg4eRx2ek5sQQH7DEUVTSY5DMc7Pk9L89Uo1VW7J9sT6Q3-k0"></form><script src="/js/comboaninado.js"></script>
 
 
@@ -364,23 +331,28 @@
             															<th>N°</th>
             															<th>Hora</th>
             															<th>Historia</th>
-            															<th>Confirmado</th>
-            															<th>Consultorio</th>
             															<th>Paciente</th>
-            															<th>Acciones</th>
-            															<th>Acciones</th>
-            															<th>Acciones</th>
+            															<th>Confirmado</th>
+            															<th>Hora <br> Registro</th>
+            															<th>N° <br>cuenta</th>
+            															<th>N° Orden</th>
+            															<th>Consultorio</th>
+            															<th>Tipo Afiliado</th>
             															<th>Acciones</th>
             														</tr>
             													</thead>
             													<tbody>
             														<tr>
             															<td>1</td>
-            															<td>2020-07-08</td>
-            															<td>2020-07-07</td>
-            															<td>4:00</td>
+            															<td>08:00:00</td>
+            															<td>2345678</td>
+            															<td>Rosa Herrera Cervantes</td>
+            															<td>PENDIENTE</td>
             															<td>3:00</td>
-            															<td>PROCEDIMIENTO</td>
+            															<td>15421</td>
+            															<td>0061</td>
+            															<td>C-01</td>
+            															<td>NO DEFINIDO</td>
             															<td>
             																<button type="submit" class="edit btn btn-primary"><i class="fas fa-edit"></i></button>
             																<button type="submit" class="delete btn btn-danger"><i class="fas fa-minus"></i></button>
@@ -388,11 +360,15 @@
             														</tr>
             														<tr>
             															<td>2</td>
-            															<td>2020-07-09</td>
-            															<td>2020-07-10</td>
-            															<td>10:00</td>
-            															<td>11:00</td>
-            															<td>PROCEDIMIENTO</td>
+            															<td>08:00:00</td>
+            															<td>2345678</td>
+            															<td>Rosa Herrera Cervantes</td>
+            															<td>PENDIENTE</td>
+            															<td>3:00</td>
+            															<td>15421</td>
+            															<td>0061</td>
+            															<td>C-01</td>
+            															<td>NO DEFINIDO</td>
             															<td>
             																<button type="submit" class="edit btn btn-primary"><i class="fas fa-edit"></i></button>
             																<button type="submit" class="delete btn btn-danger"><i class="fas fa-minus"></i></button>
@@ -400,11 +376,15 @@
             														</tr>
             														<tr>
             															<td>3</td>
-            															<td>2020-07-09</td>
-            															<td>2020-07-09</td>
-            															<td>10:00</td>
-            															<td>11:00</td>
-            															<td>PROCEDIMIENTO</td>
+            															<td>08:00:00</td>
+            															<td>2345678</td>
+            															<td>Rosa Herrera Cervantes</td>
+            															<td>PENDIENTE</td>
+            															<td>3:00</td>
+            															<td>15421</td>
+            															<td>0061</td>
+            															<td>C-01</td>
+            															<td>NO DEFINIDO</td>
             															<td>
             																<button type="submit" class="edit btn btn-primary"><i class="fas fa-edit"></i></button>
             																<button type="submit" class="delete btn btn-danger"><i class="fas fa-minus"></i></button>
@@ -412,11 +392,15 @@
             														</tr>
             														<tr>
             															<td>4</td>
-            															<td>2020-07-10</td>
-            															<td>2020-07-10</td>
+            															<td>08:00:00</td>
+            															<td>2345678</td>
+            															<td>Rosa Herrera Cervantes</td>
+            															<td>PENDIENTE</td>
             															<td>3:00</td>
-            															<td>4:00</td>
-            															<td>PROCEDIMIENTO</td>
+            															<td>15421</td>
+            															<td>0061</td>
+            															<td>C-01</td>
+            															<td>NO DEFINIDO</td>
             															<td>
             																<button type="submit" class="edit btn btn-primary"><i class="fas fa-edit"></i></button>
             																<button type="submit" class="delete btn btn-danger"><i class="fas fa-minus"></i></button>
@@ -427,105 +411,254 @@
             											</div>
             										</div>
             									</div>
+            									<div class="col-sm-4">
+            										<div class="row mb-5" style="padding-top:20px;">
+            											<div class="col-sm-12 pb-3">
+            												<ul class="nav nav-tabs" role="tablist">
+            													<li class="nav-item">
+            														<a class="nav-link active" href="#profile" role="tab" data-toggle="tab">profile</a>
+            													</li>
+            													<li class="nav-item">
+            														<a class="nav-link" href="#buzz" role="tab" data-toggle="tab">buzz</a>
+            													</li>
 
+            												</ul>
+
+            												<!-- Tab panes -->
+            												<div class="tab-content">
+            													<div role="tabpanel" class="tab-pane fade in active" id="profile">
+            													
+
+            												</div>
+            													<div role="tabpanel" class="tab-pane fade" id="buzz">bbb</div>
+
+            												</div>
+            												<div class="col-sm-12 mb-2">
+            													<span style="font-size: 18px;">Buscar paciente:</span></div>
+            												
+	            												<div class="pl-3 form-check form-check-inline">
+	            													<input class="form-check-input" type="radio" checked="" name="radiofiltro" id="inlineRadio1" value="1">
+	            													<label class="form-check-label" for="inlineRadio1">Por Dni</label>
+	            												</div>
+
+	            												<div class="form-check form-check-inline">
+	            													<input class="form-check-input" type="radio" name="radiofiltro" id="inlineRadio2" value="2">
+	            													<label class="form-check-label" for="inlineRadio2">Por Nombre y apellido</label>
+	            												</div>
+            												</div>
+            												<div class="col-sm-12">
+            													<form action="/Paciente" method="post"><div class="row">
+	            													<input id="paciente_idPaciente" name="paciente.idPaciente" type="hidden" value="">
+	            													<div class="col-sm-6 mb-3">
+	            														<select class="form-control  small-input">
+	            															<option value="value">DNI</option>
+	            														</select>
+	            													</div>
+	            													<div class="col-sm-6 mb-3">
+	            														<input type="text" id="dni" name="dni" class="form-control small-input">
+	            													</div>
+	            													<div class="col-sm-6 mb-3">
+	            														<input type="text" id="nombre" name="nombre" class="form-control  small-input" placeholder="Ingrese nombre" disabled="">
+	            													</div>
+	            													<div class="col-sm-6 mb-3">
+	            														<input type="text" id="apellidos" name="apellidos" class="form-control  small-input" placeholder="Ingrese apellidos" disabled="">
+	            													</div>
+	            													<div class="col-sm-6"></div>
+	            													<div class="col-sm-6 text-right">
+	            														<button class="btn btn-info" type="button"  data-toggle="modal" data-target="#buscarModal"><i class="fas fa-search"></i></button>
+	            														
+	            													</div>
+	            											</div>
+	   															</form>
+            										</div>
+            											</div>
+            										</div>
+
+            									</div>
             								</div>
             							</div>
-            						</div>
+            							<div class="modal fade" id="buscarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            								<div class="modal-dialog" role="document">
+            									<div class="modal-content">
+            										<div class="modal-header">
+            											<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            												<span aria-hidden="true">&times;</span>
+            											</button>
+            										</div>
+            										<div class="modal-body">
+            											<div class="col-sm-12">
+            												<table class="table table-responsive table-bordered table-hover text-center" id="cronogramagrid">
+            													<thead>
+            														<tr>
+            															<th>N°</th>
+            															<th>Hora</th>
+            															<th>Historia</th>
+            															<th>Paciente</th>
+            															<th>Confirmado</th>
+            															<th>Hora <br> Registro</th>
+            															<th>N° <br>cuenta</th>
+            															<th>N° Orden</th>
+            															<th>Consultorio</th>
+            															<th>Tipo Afiliado</th>
+            															<th>Acciones</th>
+            														</tr>
+            													</thead>
+            													<tbody>
+            														<tr>
+            															<td>1</td>
+            															<td>08:00:00</td>
+            															<td>2345678</td>
+            															<td>Rosa Herrera Cervantes</td>
+            															<td>PENDIENTE</td>
+            															<td>3:00</td>
+            															<td>15421</td>
+            															<td>0061</td>
+            															<td>C-01</td>
+            															<td>NO DEFINIDO</td>
+            															<td>
+            																<button type="submit" class="edit btn btn-primary"><i class="fas fa-edit"></i></button>
+            																<button type="submit" class="delete btn btn-danger"><i class="fas fa-minus"></i></button>
+            															</td>
+            														</tr>
+            														<tr>
+            															<td>2</td>
+            															<td>08:00:00</td>
+            															<td>2345678</td>
+            															<td>Rosa Herrera Cervantes</td>
+            															<td>PENDIENTE</td>
+            															<td>3:00</td>
+            															<td>15421</td>
+            															<td>0061</td>
+            															<td>C-01</td>
+            															<td>NO DEFINIDO</td>
+            															<td>
+            																<button type="submit" class="edit btn btn-primary"><i class="fas fa-edit"></i></button>
+            																<button type="submit" class="delete btn btn-danger"><i class="fas fa-minus"></i></button>
+            															</td>
+            														</tr>
+            														<tr>
+            															<td>3</td>
+            															<td>08:00:00</td>
+            															<td>2345678</td>
+            															<td>Rosa Herrera Cervantes</td>
+            															<td>PENDIENTE</td>
+            															<td>3:00</td>
+            															<td>15421</td>
+            															<td>0061</td>
+            															<td>C-01</td>
+            															<td>NO DEFINIDO</td>
+            															<td>
+            																<button type="submit" class="edit btn btn-primary"><i class="fas fa-edit"></i></button>
+            																<button type="submit" class="delete btn btn-danger"><i class="fas fa-minus"></i></button>
+            															</td>
+            														</tr>
+            														<tr>
+            															<td>4</td>
+            															<td>08:00:00</td>
+            															<td>2345678</td>
+            															<td>Rosa Herrera Cervantes</td>
+            															<td>PENDIENTE</td>
+            															<td>3:00</td>
+            															<td>15421</td>
+            															<td>0061</td>
+            															<td>C-01</td>
+            															<td>NO DEFINIDO</td>
+            															<td>
+            																<button type="submit" class="edit btn btn-primary"><i class="fas fa-edit"></i></button>
+            																<button type="submit" class="delete btn btn-danger"><i class="fas fa-minus"></i></button>
+            															</td>
+            														</tr>
+            													</tbody>
+            												</table>
+            											</div>
+            										</div>
+            										<div class="modal-footer">
+            											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            											<button type="button" class="btn btn-primary">Save changes</button>
+            										</div>
+            									</div>
+            								</div>
+            							</div>
+            							<script src="js/cargavistaparcial.js"></script>
+            							<script src="js/combosaninadoscitas.js"></script>
 
-            						<div class="modal fade" id="modalcitas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 
+            							<input type="hidden" id="hdnBaseUrl" value="" />
             						</div>
-            						<div class="modal fade" id="modalreprogramar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-
-            						</div>
-
-            						<div id="modalcronograma" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-            						</div>
-            						<div id="modaldetallecro" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-            						</div>
-            						<div id="modalanular" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-            						</div>
-            						<div id="modaldetalle" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-            						</div>
-            						<script src="js/cargavistaparcial.js"></script>
-            						<script src="js/combosaninadoscitas.js"></script>
-
-
-            						<input type="hidden" id="hdnBaseUrl" value="" />
             					</div>
-            				</div>
 
-            			</div><!-- /.col -->
-            		</div><!-- /.row -->
-            	</div><!-- /.container-fluid -->
+            				</div><!-- /.col -->
+            			</div><!-- /.row -->
+            		</div><!-- /.container-fluid -->
+            	</div>
+
+
+            	<!-- Main content -->
+            	<!-- /.Left col -->
+            	<!-- right col (We are only adding the ID to make the widgets sortable)-->
+            	<!-- right col -->
             </div>
-
-
-            <!-- Main content -->
-            <!-- /.Left col -->
-            <!-- right col (We are only adding the ID to make the widgets sortable)-->
-            <!-- right col -->
+            <!-- /.row (main row) -->
+            <!-- /.content -->
+            <!-- /.content-wrapper -->
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark">
+            	<!-- Control sidebar content goes here -->
+            </aside>
+            <!-- /.control-sidebar -->
         </div>
-        <!-- /.row (main row) -->
-        <!-- /.content -->
-        <!-- /.content-wrapper -->
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-        	<!-- Control sidebar content goes here -->
-        </aside>
-        <!-- /.control-sidebar -->
-    </div>
 
 
-    <!-- ./wrapper -->
-    <!-- jQuery -->
-    <script src="Content/plugins/jquery/jquery.min.js"></script>
-    <!-- jQuery UI 1.11.4 -->
-    <script src="Content/plugins/jquery-ui/jquery-ui.min.js"></script>
-    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-    <script>
-    	$.widget.bridge('uibutton', $.ui.button)
-    </script>
-    <!-- Bootstrap 4 -->
-    <script src="Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- ChartJS -->
-    <script src="Content/plugins/chart.js/Chart.min.js"></script>
-    <!-- Sparkline -->
-    <script src="Content/plugins/sparklines/sparkline.js"></script>
-    <!-- JQVMap -->
-    <script src="Content/plugins/jqvmap/jquery.vmap.min.js"></script>
-    <script src="Content/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-    <!-- jQuery Knob Chart -->
-    <script src="Content/plugins/jquery-knob/jquery.knob.min.js"></script>
-    <!-- daterangepicker -->
-    <script src="Content/plugins/moment/moment.min.js"></script>
-    <script src="Content/plugins/daterangepicker/daterangepicker.js"></script>
-    <!-- Tempusdominus Bootstrap 4 -->
-    <script src="Content/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-    <!-- Summernote -->
-    <script src="Content/plugins/summernote/summernote-bs4.min.js"></script>
-    <!-- overlayScrollbars -->
-    <script src="Content/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="Content/dist/js/adminlte.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="Content/dist/js/pages/dashboard.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="Content/dist/js/demo.js"></script>
+        <!-- ./wrapper -->
+        <!-- jQuery -->
+        <script src="Content/plugins/jquery/jquery.min.js"></script>
+        <!-- jQuery UI 1.11.4 -->
+        <script src="Content/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+        <script>
+        	$.widget.bridge('uibutton', $.ui.button)
+        </script>
+        <!-- Bootstrap 4 -->
+        <script src="Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- ChartJS -->
+        <script src="Content/plugins/chart.js/Chart.min.js"></script>
+        <!-- Sparkline -->
+        <script src="Content/plugins/sparklines/sparkline.js"></script>
+        <!-- JQVMap -->
+        <script src="Content/plugins/jqvmap/jquery.vmap.min.js"></script>
+        <script src="Content/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+        <!-- jQuery Knob Chart -->
+        <script src="Content/plugins/jquery-knob/jquery.knob.min.js"></script>
+        <!-- daterangepicker -->
+        <script src="Content/plugins/moment/moment.min.js"></script>
+        <script src="Content/plugins/daterangepicker/daterangepicker.js"></script>
+        <!-- Tempusdominus Bootstrap 4 -->
+        <script src="Content/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+        <!-- Summernote -->
+        <script src="Content/plugins/summernote/summernote-bs4.min.js"></script>
+        <!-- overlayScrollbars -->
+        <script src="Content/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="Content/dist/js/adminlte.js"></script>
+        <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+        <script src="Content/dist/js/pages/dashboard.js"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="Content/dist/js/demo.js"></script>
 
-    <!--buscar-->
-    <script src="Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="Content/plugins/datatables/jquery.dataTables.js"></script>
-    <script src="Content/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
-    <script src="js/input.js"></script>
+        <!--buscar-->
+        <script src="Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="Content/plugins/datatables/jquery.dataTables.js"></script>
+        <script src="Content/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+        <script src="js/input.js"></script>
 
 
 
-    <script src="lib/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+        <script src="lib/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 
 
 
 
-</body>
-</html>
+    </body>
+    </html>

@@ -59,11 +59,11 @@ body aside .nav-link {
 	padding: 0.8rem 1rem;
 }
 .table td, .table th {
-	padding: .65rem;
+	    padding: .55rem .38rem;
 }
 .table-bordered td, .table-bordered th {
 	border: 1px solid #dee2e6;
-	font-size: 12.5px;
+	font-size: 12px;
 }
 
 .agregar {
@@ -139,7 +139,12 @@ body .table-bordered {
 body .card-primary:not(.card-outline) .card-header {
 	background: #00aee5;
 }
-
+button.edit , button.delete {
+	    padding: 0.13rem .55rem 0.40rem;
+}
+.edit i , .delete i{
+	    font-size: 13px;
+}
 @media (max-width:710px) {
 	.card-height {
 		height: auto;
