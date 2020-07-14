@@ -145,6 +145,9 @@ button.edit , button.delete {
 .edit i , .delete i{
 	    font-size: 13px;
 }
+.siteds-input {
+	    height: calc(1.75rem + 2px)!important;
+}
 @media (max-width:710px) {
 	.card-height {
 		height: auto;
