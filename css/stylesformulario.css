@@ -136,6 +136,16 @@ body .table-bordered {
 	font-weight:600;
 }
 
+table, th, td {
+  border: 1px solid red;
+  border-collapse: collapse;
+}
+table{
+    width:100%;
+    table-layout: fixed;
+    overflow-wrap: break-word;
+}
+
 body .card-primary:not(.card-outline) .card-header {
 	background: #00aee5;
 }

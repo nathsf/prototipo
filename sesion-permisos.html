@@ -1,0 +1,738 @@
+
+
+
+
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+  	<title>Sistema Web | His</title>
+
+  	<!-- Tell the browser to be responsive to screen width -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Font Awesome -->
+  	<link rel="stylesheet" href="Content/plugins/fontawesome-free/css/all.min.css">
+  	<!-- Ionicons -->
+  	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  	<!-- Tempusdominus Bbootstrap 4 -->
+  	<link rel="stylesheet" href="Content/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  	<!-- iCheck -->
+  	<link rel="stylesheet" href="Content/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  	<!-- JQVMap -->
+  	<link rel="stylesheet" href="Content/plugins/jqvmap/jqvmap.min.css">
+  	<!-- Theme style -->
+  	<link rel="stylesheet" href="Content/dist/css/adminlte.min.css">
+  	<!-- overlayScrollbars -->
+  	<link rel="stylesheet" href="Content/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  	<!-- Daterange picker -->
+  	<link rel="stylesheet" href="Content/plugins/daterangepicker/daterangepicker.css">
+  	<!-- summernote -->
+  	<link rel="stylesheet" href="Content/plugins/summernote/summernote-bs4.css">
+
+  	<!-- buscar -->
+  	<link rel="stylesheet" href="Content/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+  	<link href="css/stylesformulario.css" rel="stylesheet" />
+
+  	<!-- Google Font: Source Sans Pro -->
+  	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  	<script src="lib/jquery/dist/jquery.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script src="js/sweetalert.js"></script>
+
+  	<style type="text/css">
+  		.user-panel img {
+  			height: auto;
+  			width: 3.1rem;
+  		}
+  	</style>
+
+  	<style type="text/css">
+  		.user-panel .info {
+  			display: inline-block;
+  			padding: 20px 5px 5px 10px;
+  		}
+  	</style>
+
+  </head>
+  <body class="hold-transition sidebar-mini layout-fixed">
+  	<div class="wrapper">
+
+  		<!-- Navbar -->
+
+  		<nav class="main-header navbar navbar-expand navbar-light" style="background-color: #f4f6f9;border-bottom:#f4f6f9">
+  			<!-- Left navbar links -->
+  			<ul class="navbar-nav">
+  				<li class="nav-item">
+  					<a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars" style="color:#0f5493"></i></a>
+  				</li>
+
+  			</ul>
+
+  			<!-- SEARCH FORM -->
+  			<!-- Right navbar links -->
+  			<ul class="navbar-nav ml-auto">
+
+  				<!-- Messages Dropdown Menu -->
+  				<!-- Notifications Dropdown Menu -->
+  				<div class="">
+  					<button type="button" class="btn btn-secondary dropdown-toggle hidden-sm-down" style="background: none;
+  					border: none;color: #0f5493;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  					<img style="width:24px;border-radius:50%;border:2px solid #0f5493;margin-right:9px;" src="/images/profile.png" /><span class="bold" style="color:#0f5493">Bienvenido, Rafael Sanchez</span>
+  				</button>
+  				<div class="dropdown-menu dropdown-menu-right">
+  					<button class="dropdown-item" type="button"><img style="margin-right: 9px;" src="images/back.png" /><span> Panel </span></button>
+  					<button class="dropdown-item" type="button"><img style="margin-right: 9px;" src="images/off.png" /><span> Cerrar Sesion </span></button>
+
+  				</div>
+  			</div>
+
+  		</ul>
+  	</nav>
+
+  	<!-- /.navbar -->
+  	<!-- Main Sidebar Container -->
+  	<aside class="main-sidebar sidebar-dark-primary elevation-4">
+  		<!-- Brand Logo -->
+  		<!-- Sidebar -->
+  		<div class="sidebar">
+                  <!-- Sidebar user panel (optional)
+                  <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                      <div class="image">
+                          <img src="/Content/dist/img/avatar5.png" class="img-circle elevation-2" alt="User Image">
+                      </div>
+                      <div class="info">
+                          <a href="#" class="d-block">Rafael Sanchez</a>
+                      </div>
+                  </div>
+                -->
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                          <!-- Add icons to the links using the .nav-icon class
+                          	with font-awesome or any other icon font library -->
+                          	<li style="margin-bottom: 1rem;">
+                          		<a href="index3.html" class="brand-link">
+                          			<img src="Content/dist/img/cem2.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                          			style="opacity: .8">
+                          			<span class="brand-text font-weight-light"><font face="Kaushan Script, coursive  ">HIS</font></span>
+
+                          		</a>
+                          	</li>
+                          	<li class="hidden-sm-up">
+                          		<a href="#" class="nav-link ">
+                          			<img style="width:35px;border-radius:50%;border:2px solid white;margin-right:9px;" src="images/profile.png" /><span style="font-weight: bold;
+                          			color:white;"> Rafael Sanchez</span>
+                          		</a>
+                          	</li>
+                          	<li class="nav-item">
+                          		<a class="nav-link " href="/Persona">
+                          			<i class="nav-icon fas fa-user-injured"></i>
+                          			<p>
+                          				Gestionar Personal
+
+                          			</p>
+                          		</a>
+                          	</li>
+                          	<li class="nav-item">
+                          		<a class="nav-link " href="/Cronograma">
+                          			<i class="nav-icon fas fa-user-injured"></i>
+                          			<p>
+                          				Horario de Medico
+
+                          			</p>
+                          		</a>
+                          	</li>
+
+                          	<li class="nav-item">
+                          		<a class="nav-link " href="/Paciente">
+                          			<i class="nav-icon fas fa-notes-medical"></i>
+                          			<p>
+                          				Reserva de Citas
+
+                          			</p>
+                          		</a>
+                          	</li>
+
+                          	<li class="nav-item">
+                          		<a class="nav-link " href="/Paciente/AdmicionMedico">
+                          			<i class="nav-icon fas fa-notes-medical"></i>
+                          			<p>
+                          				Listado de Citas
+
+                          			</p>
+                          		</a>
+                          	</li>
+
+
+                          	<li class="nav-item">
+                          		<a class="nav-link " href="/Tablas">
+                          			<i class="nav-icon far fa-calendar-alt"></i>
+                          			<p>
+                          				Gestion de tablas
+
+                          			</p>
+                          		</a>
+                          	</li>
+                          	<li class="hidden-sm-up nav-item">
+                          		<a href="#" class="nav-link ">
+                          			<i class="far fa-times-circle"></i>
+                          			<p>
+                          				Gestion de tablas
+
+                          			</p>
+                          		</a>
+                          	</li>
+                          	<li class="hidden-sm-up nav-item">
+                          		<a href="#" class="nav-link ">
+                          			<i class="far fa-times-circle"></i> <p>
+                          				Gestion de tablas
+
+                          			</p>
+                          		</a>
+                          	</li>
+
+
+                          </ul>
+                        </nav>
+                        <!-- /.sidebar-menu -->
+                      </div>
+                      <!-- /.sidebar -->
+                    </aside>
+
+                    <!-- Content Wrapper. Contains page content -->
+                    <div class="content-wrapper">
+                     <!-- Content Header (Page header) -->
+                     <div class="content-header">
+                      <div class="card-cem container">
+                       <div class="row mb-2">
+                        <div class="col-sm-6">
+                         <h1 class="m-0 text-dark"></h1>
+                       </div><!-- /.col -->
+                       <div class="col-sm-12" style="padding: 2rem;">
+                         <div class="layout-content">
+                          <div class="layout-content-body">
+
+
+                           <div class="container">
+                            <div class="row">
+                             <div class="col-sm-12 left" style="height: 20px;">
+                              <div class="card card-primary card-his">
+                               <div class="card-header card-shadow">
+                                <h2>Gestion de permisos</h2>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+
+
+                         <div class="col-sm-12" style="border: 1px solid rgba(128, 128, 128, 0.29);
+                         border-radius: 9px;
+                         margin-top: 1rem;
+                       }">														<div class="row pb-2 text-left">
+                         <div class="col-sm-12" style="display: none;">
+                          <button class="btn btn-primary mt-4 pt-1" id="Crear"><i class="far fa-credit-card"></i> 
+                          CAJA</button>
+                          <button class="btn btn-primary mt-4 pt-1 ml-1" id="Crear"> <i class="far fa-clock"></i> CITA</button>
+                          <button class="btn btn-primary mt-4 pt-1 ml-1" id="Crear"><i class="fas fa-flask"></i> laboratorio</button>
+                          <button class="btn btn-primary mt-4 pt-1 ml-1" id="Crear"><i class="far fa-image"></i> imagenes</button>
+                          <button class="btn btn-primary mt-4 pt-1 ml-1" style="display:none" id="Crear"><i class="fas fa-user-check"></i>Listado Paciente</button>
+                          <button class="btn btn-primary mt-4 pt- ml-1" id="Crear"><i class="fas fa-clinic-medical"></i> Interconsulta</button>
+                        </div>
+
+                      </div>
+                      <form action="/Cronograma/Create" id="frmcrearcronograma" method="post" novalidate="novalidate">	<div class="row pb-2">
+                       <div class="col-sm-3">
+                        <div class="row">
+                         <div class="col-sm-11">
+                          <div class="input-style">
+                           <label class="form-label">Seleccione un Rol</label>
+
+                           <select class="form-control" data-cascade-combo="#stypes" data-cascade-combo-param-name="id" data-cascade-combo-source="/Cronograma/GetEspecialidad" data-val="true" data-val-required="Seleccione un medico" id="idMedico" name="idMedico"><option value="">Seleccionar</option>
+                            <option value="1">xavi saens galvez</option>
+                            <option value="2">john Mendoza Mendoza</option>
+                            <option value="3">sophia Ruiz Ruiz</option>
+                            <option value="4">Lady Hidalgo Hidalgo</option>
+                            <option value="5">julius franco net</option>
+                            <option value="6">bertol franco palacios</option>
+                            <option value="7">erick palacios franco</option>
+                            <option value="8">tom tomcat guerra</option>
+                          </select>
+                          <span class="field-validation-valid text-danger" data-valmsg-for="idMedico" data-valmsg-replace="true"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="row">
+                     <div class="col-sm-11">
+                      <div class="input-style">
+                       <label class="form-label">Seleccione Usuario</label>
+                       <select class="form-control" data-val="true" data-val-required="Seleccione una especialidad" id="stypes" name="idEspecialidad"><option value="">Seleccionar</option>
+                        <option value="126">ALERGIA E INMUNOLOGIA</option>
+                        <option value="127">CARDIOLOGIA</option>
+                        <option value="128">CIRUGIA ONCOLOGICA DE CABEZA Y CUELLO</option>
+                        <option value="129">CIRUGIA DE TORAX Y CARDIOVASCULAR</option>
+                        <option value="130">CIRUGIA GENERAL Y LAPAROSCOPICA</option>
+                        <option value="131">CIRUGIA GENERAL Y ONCOLOGICA</option>
+                        <option value="132">DERMATOLOGIA</option>
+                        <option value="133">RADIOLOGIA</option>
+                        <option value="134">ENDOCRINOLOGIA</option>
+                        <option value="135">ENFERMERIA</option>
+                        <option value="136">GASTROENTEROLOGIA</option>
+                        <option value="137">GERIATRIA</option>
+                        <option value="138">GINECOLOGIA Y OBSTETRICIA</option>
+                        <option value="139">GINECOLOGIA ONCOLOGICA</option>
+                        <option value="140">HEMATOLOGIA</option>
+                        <option value="141">MASTOLOGIA </option>
+                        <option value="142">MEDICINA FISICA Y REHABILITACION</option>
+                        <option value="143">MEDICINA GENERAL</option>
+                        <option value="144">MEDICINA INTERNA</option>
+                        <option value="145">NEFROLOGIA</option>
+                        <option value="146">NEUMOLOGIA</option>
+                        <option value="147">NEUROCIRUGIA</option>
+                        <option value="148">NEUROLOGIA</option>
+                        <option value="149">NUTRICION Y DIETETICA</option>
+                        <option value="150">ODONTOLOGIA INTEGRAL</option>
+                      </select>
+                      <span class="field-validation-valid text-danger" data-valmsg-for="idEspecialidad" data-valmsg-replace="true"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 text-right">
+                <div class="row">
+                     
+                    <div class="col-sm-12 text-right">
+                        <button class="btn btn-primary mt-4 pt-1 ml-1" id="Crear"><i class="fas fa-user-cog"></i> Administrar Menu</button>
+                    <button class="btn btn-primary mt-4 pt-1 ml-1" id="Crear"><i class="far fa-save"></i> Guardar</button>
+                 </div>
+                </div>
+              </div>
+
+            </div>
+
+            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8EZArBrd5jZLg1_sLSb7wTB3o5UTO2OevqZbEioNFohXYsrsXNItNJEpW_v1hsqkrCmhlCIjdGrLP9j5tPYSVFfdDqi7IWRsrd65fclg4eRx2ek5sQQH7DEUVTSY5DMc7Pk9L89Uo1VW7J9sT6Q3-k0"></form><script src="/js/comboaninado.js"></script>
+
+
+
+            <div class="row pt-3">
+             <div class="col-sm-12">
+              
+               <table id="example" class="table table-striped table-bordered" style="width:100%">
+                <thead>
+                  <tr>
+                    <th>Menu ID</th>
+                    <th>Display Name</th>
+                    <th>Permiso Usuario</th>
+                    <th>Permiso Rol</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Tiger Nixon</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                     <td>2</td>
+                    <td>Garrett Winters</td>
+                      <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Ashton Cox</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Cedric Kelly</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    
+                    <td>4</td>
+                    <td>Airi Satou</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    
+                    <td>6</td>
+                    <td>Brielle Williamson</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                   
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Herrod Chandler</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Rhona Davidson</td>
+                    
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                   
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Javascript Developer</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Software Engineer</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>Office Manager</td>
+                   <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Support Lead</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>Regional Director</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                  
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>Senior Marketing Designer</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>Regional Director</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>Marketing Designer</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>Chief Financial Officer (CFO)</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                   
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>Systems Administrator</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>Software Engineer</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                  
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>Personnel Lead</td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      </div>
+                    </td>
+                    
+                  </tr>
+
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Menu ID</th>
+                    <th>Display Name</th>
+                    <th>Permiso Usuario</th>
+                    <th>Permiso Rol</th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="js/cargavistaparcial.js"></script>
+  <script src="js/combosaninadoscitas.js"></script>
+
+
+  <input type="hidden" id="hdnBaseUrl" value="" />
+  </div>
+  </div>
+
+  </div><!-- /.col -->
+  </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+  </div>
+
+
+  <!-- Main content -->
+  <!-- /.Left col -->
+  <!-- right col (We are only adding the ID to make the widgets sortable)-->
+  <!-- right col -->
+  </div>
+  <!-- /.row (main row) -->
+  <!-- /.content -->
+  <!-- /.content-wrapper -->
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+  	<!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+  </div>
+
+
+  <!-- ./wrapper -->
+  <!-- jQuery -->
+  <script src="Content/plugins/jquery/jquery.min.js"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="Content/plugins/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <script>
+  	$.widget.bridge('uibutton', $.ui.button)
+  </script>
+  <!-- Bootstrap 4 -->
+  <script src="Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- ChartJS -->
+  <script src="Content/plugins/chart.js/Chart.min.js"></script>
+  <!-- Sparkline -->
+  <script src="Content/plugins/sparklines/sparkline.js"></script>
+  <!-- JQVMap -->
+  <script src="Content/plugins/jqvmap/jquery.vmap.min.js"></script>
+  <script src="Content/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+  <!-- jQuery Knob Chart -->
+  <script src="Content/plugins/jquery-knob/jquery.knob.min.js"></script>
+  <!-- daterangepicker -->
+  <script src="Content/plugins/moment/moment.min.js"></script>
+  <script src="Content/plugins/daterangepicker/daterangepicker.js"></script>
+  <!-- Tempusdominus Bootstrap 4 -->
+  <script src="Content/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- Summernote -->
+  <script src="Content/plugins/summernote/summernote-bs4.min.js"></script>
+  <!-- overlayScrollbars -->
+  <script src="Content/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="Content/dist/js/adminlte.js"></script>
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <script src="Content/dist/js/pages/dashboard.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="Content/dist/js/demo.js"></script>
+
+  <!--buscar-->
+  <script src="Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="Content/plugins/datatables/jquery.dataTables.js"></script>
+  <script src="Content/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+  <script src="js/pagination.js"></script>
+
+  <script src="lib/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+
+  </body>
+  </html>
