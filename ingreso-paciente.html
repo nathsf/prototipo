@@ -336,50 +336,42 @@
                         >
                           <div class="card card-primary card-his">
                             <div class="card-header card-shadow">
-                              <h1>Datos del paciente</h1>
+                              <h1>Registro de Paciente</h1>
                             </div>
                           </div>
                         </div>
                         <div class="col-sm-12">
                           <div class="card">
                             <div class="card-body">
-                              <h1>Elija una Opcion</h1>
+                              <h1></h1>
                               <br />
                               <div class="row">
                                 <div class="col-sm-4">
                                   <div class="col-sm-12">
                                     <div class="row">
                                       <div class="col-sm-7">
+                                    
+                                    
                                         <div class="form-check-inline">
-                                          <input
-                                            class="form-check-input"
-                                            type="radio"
-                                            name="exampleRadios"
-                                            id="exampleRadios1"
-                                            value="option1"
-                                            checked
-                                          />
-                                          <label
-                                            class="form-check-label"
-                                            for="exampleRadios1"
-                                          >
-                                            CON HISTORIA
-                                          </label>
-                                        </div>
-                                        <div class="form-check-inline">
-                                          <input
-                                            class="form-check-input"
-                                            type="radio"
-                                            name="exampleRadios"
-                                            id="exampleRadios2"
-                                            value="option2"
-                                          />
-                                          <label
-                                            class="form-check-label"
-                                            for="exampleRadios2"
-                                          >
-                                            SIN HISTORIA
-                                          </label>
+                                          <div class="row">
+                                            <div class="col-sm-6">
+                                              <label for="cboparentesco2"
+                                                ></label
+                                              >
+                                            </div>
+                                            
+                                              <select
+                                                class="form-control small-input"
+                                                id="paciente_idParentescoCompa_ia"
+                                                name="paciente.idParentescoCompañia"
+                                                ><option value="">Seleccione una Opcion</option>
+                                                <option value="40">DNI</option>
+                                                <option value="41">PASAPORTE</option>
+                                                <option value="41">CON HISTORIA</option>
+                                        
+                                              </select>
+                                          
+                                          </div>
                                         </div>
                                       </div>
                                     </div>
@@ -393,7 +385,7 @@
                         <div class="col-sm-12">
                           <a
                             data-toggle="collapse"
-                            href="#collapseacom"
+                            href="#collapseacom2"
                             role="button"
                             aria-expanded="false"
                             aria-controls="collapseacom"
@@ -417,26 +409,52 @@
                           <div class="card">
                             <div
                               class="collapse multi-collapse"
-                              id="collapseacom"
+                              id="collapseacom2"
                             >
                               <div class="card-body">
                                 <div class="row mb-12-inline">
-                                  <div class="col-sm-12">
                                     <div class="row">
-                                      <div class="col-sm-9">
+                                          <div class="col-sm-12">
+                                              <div class="btn-group" style="padding-left: 79rem;" class="fa-pull-right">
+                                                    <button type="button" class="btn btn-primary">Grabar</button>
+                                                   
+                                                    <button type="button" class="btn btn-primary">Cancelar</button>
+                                                  </div>
+                                                  <br>
+                                                 
+                                                  <div class="row">
+                                                    <div class="col-sm-6"  style="padding-left: 2.5rem;">
+                                                          <input
+                                                          type="text"
+                                                          class="form-control"
+                                                          placeholder="Buscar"
+                                                        />
+                                                    </div>
+                                                    </div>
+                                                    <br>
+                                                    <br>
+                                              
+                                          </div>
+
+                                    </div>
+                                  <div class="col-sm-12">
+                                    
+                                    <div class="row">
+                                      <div class="col-sm-12" style="padding-left: 2rem;">
                                         <label for="cbotipdocacom"
                                           ><h2>Medico:</h2></label
                                         >
-                                        <label for="cbotipdocacom"
+                                        <label for="cbotipdocacom" 
                                           ><h1>00050 Fredy Flores Yaricua</h1>
                                         </label>
                                       </div>
-                                      <div class="col-sm-8">
+                                      
+                                      <div class="col-sm-12">
                                         <div class="container">
                                           <div class="row">
-                                            <div class="col-sm-3">
+                                            <div class="col-sm-4">
                                               <div class="row">
-                                                <div class="col-sm-11">
+                                                <div class="col-sm-12">
                                                   <div class="
                                                   <div class="form-group">
                                                     <input
@@ -501,38 +519,11 @@
                                             <hr />
                                           </div>
                                         </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-sm-12">
-                          <a
-                            data-toggle="collapse"
-                            href="#collapseacom"
-                            role="button"
-                            aria-expanded="false"
-                            aria-controls="collapseacom"
-                          >
-                      
-                          </a>
-                          <div class="card">
-                            <div
-                              class="collapse multi-collapse"
-                              id="collapseacom"
-                            >
-                              <div class="card-body">
-                                <div class="row mb-12-inline">
-                                  <div class="col-sm-12">
-                                    <div class="row">
-                                      <div class="col-sm-8">
                                         <div class="container">
-                                          <div class="row">
+                                          <div class="row " style=" border-top: 0.1rem solid #ced4da;padding-top: 1.5rem;"">
+               
                                             <div class="col-sm-4">
+                                                  
                                               <div class="form-group">
                                                 <div
                                                   class="input-group date"
@@ -596,6 +587,8 @@
                                           
                                           </div>
                                         </div>
+
+
                                         <div class="container">
                                           <div class="row">
                                             <div class="col-sm-8">
@@ -620,35 +613,41 @@
                                               </div>
                                             </div>
 
+
                                             <div class="col-sm-4">
-                                              <select
-                                                class="form-control"
-                                                id="paciente_idParentescoAcompa_ante"
-                                                name="paciente.idParentescoAcompañante"
-                                                ><option value=""
-                                                  >Tipo de Citado</option
+                                                <select
+                                                  class="form-control"
+                                                  id="paciente_idParentescoAcompa_ante"
+                                                  name="paciente.idParentescoAcompañante"
+                                                  ><option value=""
+                                                    >Tipo de Citado</option
+                                                  >
+                                                  <option value="40"
+                                                  >Continuador</option
                                                 >
-                                                <option value="40"
-                                                  >Nuevo</option
-                                                >
-                                                <option value="41"
-                                                  >Registrado</option
-                                                >
-                                              </select>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <textarea class="form-control" rows="3" placeholder="Observacion"></textarea>
-                                                <br>
+                                                  <option value="40"
+                                                    >Interconsulta</option
+                                                  >
+                                                  <option value="41"
+                                                    >Nuevo</option
+                                                  >
+                                                  <option value="41"
+                                                    >Reingreso</option
+                                                  >
+                                                </select>
+                                              </div>
+                                              <div class="col-sm-12">
+                                                  <textarea class="form-control" rows="3" placeholder="Observacion"></textarea>
+                                                  <br>
+                                                  
                                                 
+                                                  <textarea class="form-control" rows="3" placeholder=" Observacion Filacion Paciente"></textarea>
+                                              </div>
                                               
-                                                <textarea class="form-control" rows="3" placeholder=" Observacion Filacion Paciente"></textarea>
+                                              
+                                             
                                             </div>
-                                            
-                                            
-                                           
-                                          </div>
-                                         
-                                        </div>
+
                                       </div>
                                     </div>
                                   </div>
@@ -658,10 +657,12 @@
                           </div>
                         </div>
 
+                  
+
                         <div class="col-sm-12">
                           <a
                             data-toggle="collapse"
-                            href="#collapseacom"
+                            href="#collapseaTipoPaciente"
                             role="button"
                             aria-expanded="false"
                             aria-controls="collapseacom"
@@ -685,16 +686,16 @@
                           <div class="card">
                             <div
                               class="collapse multi-collapse"
-                              id="collapseacom"
+                              id="collapseaTipoPaciente"
                             >
                               <div class="card-body">
                                 <div class="row mb-12-inline">
                                   <div class="col-sm-12">
                                     <div class="row">
-                                      <div class="col-sm-8">
+                                      <div class="col-sm-12">
                                         <di class="container">
                                           <div class="row">
-                                            <div class="form-group">
+                                            <div class="form-group" style="padding-left: 2rem;">
                                               <div class="form-check-inline">
                                                 <input
                                                   class="form-check-input"
@@ -1056,305 +1057,334 @@
                             </div>
                           </div>
                         </div>
-
-                        <div class="col-sm-12">
-                          <a
-                            data-toggle="collapse"
-                            href="#collapseacom"
-                            role="button"
-                            aria-expanded="false"
-                            aria-controls="collapseacom"
-                          >
-                            <div class="card card-primary">
-                              <div class="card-header">
-                                <div class="row">
-                                  <div class="col-sm-6 card-title">
-                                    <h3>Fecha de Vigencias - [Cobertura]</h3>
-                                  </div>
-                                  <div class="col-sm-6 text-right">
-                                    <i
-                                      style="font-size: 30px;"
-                                      class="fas fa-plus fx-5"
-                                    ></i>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                          <div class="card">
-                            <div
-                              class="collapse multi-collapse"
-                              id="collapseacom"
-                            >
-                              <div class="card-body">
-                                <div class="row mb-12-inline">
-                                  <div class="col-sm-12">
+                       <div class="col-sm-12">
+                             <div class="row">
+                                   <div class="col-sm-6">
                                     <div class="row">
-                                      <div class="col-sm-8">
-                                        <div class="container">
-                                          <div class="row">
-                                            <div class="col-sm-4">
-                                              <div class="form-group">
-                                                <div
-                                                  class="input-group date"
-                                                  id="datetimepicker1"
-                                                >
-                                                  <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    placeholder="Fecha Inicio"
-                                                  />
-                                                  <span
-                                                    class="input-group-addon"
-                                                  >
-                                                    <span
-                                                      class="glyphicon glyphicon-calendar"
-                                                    ></span>
-                                                  </span>
-                                                </div>
-                                              </div>
-                                            </div>
-
-                                            <div class="col-sm-4">
-                                              <div class="form-group">
-                                                <div
-                                                  class="input-group date"
-                                                  id="datetimepicker1"
-                                                >
-                                                  <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    placeholder="Fecha Caducidad"
-                                                  />
-                                                  <span
-                                                    class="input-group-addon"
-                                                  >
-                                                    <span
-                                                      class="glyphicon glyphicon-calendar"
-                                                    ></span>
-                                                  </span>
-                                                </div>
-                                              </div>
-                                            </div>
-                                       
-                                          </div>
-                                        </div>
-                                        <div class="container">
-                                          <div class="row">
-                                            <div class="col-sm-8">
-                                              <div class="form-group">
-                                                <div
-                                                  class="input-group date"
-                                                  id="datetimepicker1"
-                                                >
-                                                  <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    placeholder="Carta de Garantia"
-                                                  />
-                                                  <span
-                                                    class="input-group-addon"
-                                                  >
-                                                    <span
-                                                      class="glyphicon glyphicon-calendar"
-                                                    ></span>
-                                                  </span>
-                                                </div>
-                                              </div>
-                                            </div>
-
-                                        
-                                          </div>
-                                          <div class="row">
-                                                <div class="col-sm-4">
-                                                  <div class="form-group">
-                                                    <div
-                                                      class="input-group date"
-                                                      id="datetimepicker1"
-                                                    >
-                                                      <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        placeholder="Fecha Garantia"
-                                                      />
-                                                      <span
-                                                        class="input-group-addon"
-                                                      >
-                                                        <span
-                                                          class="glyphicon glyphicon-calendar"
-                                                        ></span>
-                                                      </span>
+                                          <div class="col-md-12"> 
+                                                <a
+                                                data-toggle="collapse"
+                                                href="#collapseaFechaVigencia"
+                                                role="button"
+                                                aria-expanded="false"
+                                                aria-controls="collapseacom"
+                                              >
+                                                <div class="card card-primary">
+                                                  <div class="card-header">
+                                                    <div class="row">
+                                                      <div class="col-sm-6 card-title">
+                                                        <h3>Fecha de Vigencias</h3>
+                                                      </div>
+                                                      <div class="col-sm-6 text-right">
+                                                        <i
+                                                          style="font-size: 30px;"
+                                                          class="fas fa-plus fx-5"
+                                                        ></i>
+                                                      </div>
                                                     </div>
                                                   </div>
                                                 </div>
-    
-                                                <div class="col-sm-4">
-                                                  <div class="form-group">
-                                                    <div
-                                                      class="input-group date"
-                                                      id="datetimepicker1"
-                                                    >
-                                                      <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        placeholder="Cobertura"
-                                                      />
-                                                      <span
-                                                        class="input-group-addon"
-                                                      >
-                                                        <span
-                                                          class="glyphicon glyphicon-calendar"
-                                                        ></span>
-                                                      </span>
+                                              </a>
+                                              <div class="card">
+                                                <div
+                                                  class="collapse multi-collapse"
+                                                  id="collapseaFechaVigencia"
+                                                >
+                                                  <div class="card-body">
+                                                    <div class="row mb-12-inline">
+                                                      <div class="col-sm-12">
+                                                        <div class="row">
+                                                          <div class="col-sm-12">
+                                                            <div class="container">
+                                                              <div class="row">
+                                                                <div class="col-sm-6">
+                                                                  <div class="form-group">
+                                                                    <div
+                                                                      class="input-group date"
+                                                                      id="datetimepicker1"
+                                                                    >
+                                                                      <input
+                                                                        type="text"
+                                                                        class="form-control"
+                                                                        placeholder="Fecha Inicio"
+                                                                      />
+                                                                      <span
+                                                                        class="input-group-addon"
+                                                                      >
+                                                                        <span
+                                                                          class="glyphicon glyphicon-calendar"
+                                                                        ></span>
+                                                                      </span>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                    
+                                                                <div class="col-sm-6">
+                                                                  <div class="form-group">
+                                                                    <div
+                                                                      class="input-group date"
+                                                                      id="datetimepicker1"
+                                                                    >
+                                                                      <input
+                                                                        type="text"
+                                                                        class="form-control"
+                                                                        placeholder="Fecha Caducidad"
+                                                                      />
+                                                                      <span
+                                                                        class="input-group-addon"
+                                                                      >
+                                                                        <span
+                                                                          class="glyphicon glyphicon-calendar"
+                                                                        ></span>
+                                                                      </span>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                           
+                                                              </div>
+                                                            </div>
+                                                            <div class="container">
+                                                              <div class="row">
+                                                                <div class="col-sm-12">
+                                                                  <div class="form-group">
+                                                                    <div
+                                                                      class="input-group date"
+                                                                      id="datetimepicker1"
+                                                                    >
+                                                                      <input
+                                                                        type="text"
+                                                                        class="form-control"
+                                                                        placeholder="Carta de Garantia"
+                                                                      />
+                                                                      <span
+                                                                        class="input-group-addon"
+                                                                      >
+                                                                        <span
+                                                                          class="glyphicon glyphicon-calendar"
+                                                                        ></span>
+                                                                      </span>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                    
+                                                            
+                                                              </div>
+                                                              <div class="row">
+                                                                    <div class="col-sm-6">
+                                                                      <div class="form-group">
+                                                                        <div
+                                                                          class="input-group date"
+                                                                          id="datetimepicker1"
+                                                                        >
+                                                                          <input
+                                                                            type="text"
+                                                                            class="form-control"
+                                                                            placeholder="Fecha Garantia"
+                                                                          />
+                                                                          <span
+                                                                            class="input-group-addon"
+                                                                          >
+                                                                            <span
+                                                                              class="glyphicon glyphicon-calendar"
+                                                                            ></span>
+                                                                          </span>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                        
+                                                                    <div class="col-sm-6">
+                                                                      <div class="form-group">
+                                                                        <div
+                                                                          class="input-group date"
+                                                                          id="datetimepicker1"
+                                                                        >
+                                                                          <input
+                                                                            type="text"
+                                                                            class="form-control"
+                                                                            placeholder="Cobertura"
+                                                                          />
+                                                                          <span
+                                                                            class="input-group-addon"
+                                                                          >
+                                                                            <span
+                                                                              class="glyphicon glyphicon-calendar"
+                                                                            ></span>
+                                                                          </span>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                            </div>
+                                                       
+                                                          </div>
+                    
+                                                        </div>
+                                                      </div>
                                                     </div>
                                                   </div>
                                                 </div>
-                                        </div>
-                                   
+                                              </div>
+                                          </div>
                                       </div>
-
                                     </div>
-                                  </div>
-                                </div>
-                              </div>
+                                   </div>
+
+                                   <div class="col-sm-6">
+                                    <div class="row">
+                                          <div class="col-md-12"> 
+                                                <a
+                                                data-toggle="collapse"
+                                                href="#collapseaFactura"
+                                                role="button"
+                                                aria-expanded="false"
+                                                aria-controls="collapseacom"
+                                              >
+                                                <div class="card card-primary">
+                                                  <div class="card-header">
+                                                    <div class="row">
+                                                      <div class="col-sm-6 card-title">
+                                                        <h3>Factura - [Electronica]</h3>
+                                                      </div>
+                                                      <div class="col-sm-6 text-right">
+                                                        <i
+                                                          style="font-size: 30px;"
+                                                          class="fas fa-plus fx-5"
+                                                        ></i>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </a>
+                                              <div class="card">
+                                                <div
+                                                  class="collapse multi-collapse"
+                                                  id="collapseaFactura"
+                                                >
+                                                  <div class="card-body">
+                                                    <div class="row mb-12-inline">
+                                                      <div class="col-sm-12">
+                                                        <div class="row">
+                                                          <div class="col-sm-12">
+                                                            <div class="container">
+                                                              <div class="row">
+                                                                <div class="col-sm-6">
+                                                                  <div class="form-group">
+                                                                    <div
+                                                                      class="input-group date"
+                                                                      id="datetimepicker1"
+                                                                    >
+                                                                      <input
+                                                                        type="text"
+                                                                        class="form-control"
+                                                                        placeholder="Autorizacion"
+                                                                      />
+                                                                      <span
+                                                                        class="input-group-addon"
+                                                                      >
+                                                                        <span
+                                                                          class="glyphicon glyphicon-calendar"
+                                                                        ></span>
+                                                                      </span>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                    
+                                                                <div class="col-sm-6">
+                                                                  <div class="form-group">
+                                                                    <div
+                                                                      class="input-group date"
+                                                                      id="datetimepicker1"
+                                                                    >
+                                                                      <input
+                                                                        type="text"
+                                                                        class="form-control"
+                                                                        placeholder="Cod Asegurado"
+                                                                      />
+                                                                      <span
+                                                                        class="input-group-addon"
+                                                                      >
+                                                                        <span
+                                                                          class="glyphicon glyphicon-calendar"
+                                                                        ></span>
+                                                                      </span>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                           
+                                                              </div>
+                                                            </div>
+                                                            <div class="container">
+                                                         
+                                                              <div class="row">
+                                                                    <div class="col-sm-6">
+                                                                      <div class="form-group">
+                                                                        <div
+                                                                          class="input-group date"
+                                                                          id="datetimepicker1"
+                                                                        >
+                                                                          <input
+                                                                            type="text"
+                                                                            class="form-control"
+                                                                            placeholder="N° Atencion"
+                                                                          />
+                                                                          <span
+                                                                            class="input-group-addon"
+                                                                          >
+                                                                            <span
+                                                                              class="glyphicon glyphicon-calendar"
+                                                                            ></span>
+                                                                          </span>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                        
+                                                                    <div class="col-sm-6">
+                                                                      <div class="form-group">
+                                                                        <div
+                                                                          class="input-group date"
+                                                                          id="datetimepicker1"
+                                                                        >
+                                                                          <input
+                                                                            type="text"
+                                                                            class="form-control"
+                                                                            placeholder="N° Item"
+                                                                          />
+                                                                          <span
+                                                                            class="input-group-addon"
+                                                                          >
+                                                                            <span
+                                                                              class="glyphicon glyphicon-calendar"
+                                                                            ></span>
+                                                                          </span>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                    </div>
+                                                            </div>
+                                                       
+                                                          </div>
+                    
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      
+                                    </div>
+                                   </div>
+                             </div>
+                       </div>
+                   
+
+                            
+                        <div class="card">
+                              <div class="multi-collapse collapse show" id="collapseacom" >
+                                
                             </div>
                           </div>
-                        </div>
 
-                        <div class="col-sm-12">
-                              <a
-                                data-toggle="collapse"
-                                href="#collapseacom"
-                                role="button"
-                                aria-expanded="false"
-                                aria-controls="collapseacom"
-                              >
-                                <div class="card card-primary">
-                                  <div class="card-header">
-                                    <div class="row">
-                                      <div class="col-sm-6 card-title">
-                                        <h3>Facturacion</h3>
-                                      </div>
-                                      <div class="col-sm-6 text-right">
-                                        <i
-                                          style="font-size: 30px;"
-                                          class="fas fa-plus fx-5"
-                                        ></i>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </a>
-                              <div class="card">
-                                <div
-                                  class="collapse multi-collapse"
-                                  id="collapseacom"
-                                >
-                                  <div class="card-body">
-                                    <div class="row mb-12-inline">
-                                      <div class="col-sm-12">
-                                        <div class="row">
-                                          <div class="col-sm-12">
-                                            <div class="container">
-                                              <div class="row">
-                                                <div class="col-sm-4">
-                                                  <div class="form-group">
-                                                    <div
-                                                      class="input-group date"
-                                                      id="datetimepicker1"
-                                                    >
-                                                      <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        placeholder="Autorizacion"
-                                                      />
-                                                      <span
-                                                        class="input-group-addon"
-                                                      >
-                                                        <span
-                                                          class="glyphicon glyphicon-calendar"
-                                                        ></span>
-                                                      </span>
-                                                    </div>
-                                                  </div>
-                                                </div>
-    
-                                                <div class="col-sm-4">
-                                                  <div class="form-group">
-                                                    <div
-                                                      class="input-group date"
-                                                      id="datetimepicker1"
-                                                    >
-                                                      <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        placeholder="Asegurado"
-                                                      />
-                                                      <span
-                                                        class="input-group-addon"
-                                                      >
-                                                        <span
-                                                          class="glyphicon glyphicon-calendar"
-                                                        ></span>
-                                                      </span>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                      <div class="form-group">
-                                                        <div
-                                                          class="input-group date"
-                                                          id="datetimepicker1"
-                                                        >
-                                                          <input
-                                                            type="text"
-                                                            class="form-control"
-                                                            placeholder="N° Atencion"
-                                                          />
-                                                          <span
-                                                            class="input-group-addon"
-                                                          >
-                                                            <span
-                                                              class="glyphicon glyphicon-calendar"
-                                                            ></span>
-                                                          </span>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                      <div class="form-group">
-                                                        <div
-                                                          class="input-group date"
-                                                          id="datetimepicker1"
-                                                        >
-                                                          <input
-                                                            type="text"
-                                                            class="form-control"
-                                                            placeholder="N° Item"
-                                                          />
-                                                          <span
-                                                            class="input-group-addon"
-                                                          >
-                                                            <span
-                                                              class="glyphicon glyphicon-calendar"
-                                                            ></span>
-                                                          </span>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                           
-                                              </div>
-                                            </div>
-                                
-    
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
+                        
                         <div
                           class="col-sm-12"
                           id="divpacotros"
@@ -1362,7 +1392,7 @@
                         >
                           <a
                             data-toggle="collapse"
-                            href="#collapseotroscompañia"
+                            href="#collapseotroscompañia1"
                             role="button"
                             aria-expanded="false"
                             aria-controls="collapseotroscompañia"
