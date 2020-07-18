@@ -235,3 +235,12 @@ body [class*=sidebar-dark-] {
 		background: white;
 	}
 }
+
+
+/*stilos prueba*/
+
+.align-right {
+	right: 0;
+    position: absolute;
+    top: 0;
+}
