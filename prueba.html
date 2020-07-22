@@ -1,8 +1,4 @@
 
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -220,10 +216,10 @@
                              <div class="col-sm-12 ">
                               <ul class="nav nav-tabs" role="tablist">
                                 <li class="nav-item">
-                                  <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">First Panel</a>
+                                  <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Menu</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Second Panel</a>
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Datos Paciente</a>
                                 </li>
                               </ul><!-- Tab panes -->
                               <div class="tab-content">
@@ -241,103 +237,259 @@
 
                               </div>
                               <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                <div class="col-sm-12 pt-3 pb-2 " style="border-bottom: 1px solid rgba(128, 128, 128, 0.34901960784313724);">
+                                  <div class="row">
+                                    <div class="col-sm-2"><p>Buscar Paciente</p></div>
+                                    <div class="col-sm-2">
+                                      <select class="form-control  small-input">
+                                        <option value="value">DNI</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-sm-2">
+                                      <input type="text" id="dnipe" name="dni" class="form-control small-input" />
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                      <button class="btn btn-info btn-icon-small" type="submit" id="btnBuscar"><i class="fas fa-search"></i></button>
+                                      <a class="btn btn-primary btn-icon-small" type="submit" ><i class="fas fa-user-plus"></i></a>
+                                      <a class="btn btn-secondary btn-icon-small" type="submit" ><i class="fas fa-edit"></i></a>
+                                    </div>
+
+                                  </div>
+                                </div>
                                 <div class="content">
 
-                                  <div class="acc col-sm-12">
-                                    <div class="col-sm-3"> 
-                                      <img src="images/profile.png" style="width: 150px;">
+                                  <div class="acc col-sm-12 mt-3">
+                                    <div class="col-sm-2 pl-0 pr-2"> 
+                                      <img src="images/profile.png" class="profile-historia pr-1">
                                     </div>
                                     <div class="acc__card row">
-                                      <div class="col-sm-3">                                        
-                                        <div class="acc__title">Accordion Title #1</div>
+                                      <div class="col-sm-2">                                        
+                                        <div class="acc__title btn btn-primary btn-menu">Información General</div>
                                       </div>
-                                      <div class="col-sm-9 align-right">
-                                        <div class="acc__panel" style="display: none;">
-                                          uno
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="acc__card row">
-                                      <div class="col-sm-3">                                        
-                                        <div class="acc__title">Accordion Title #1</div>
-                                      </div>
-                                      <div class="col-sm-9 align-right">
-                                        <div class="acc__panel" style="display: none;">
-                                          dos
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="acc__card row">
-                                      <div class="col-sm-3">                                        
-                                        <div class="acc__title">Accordion Title #1</div>
-                                      </div>
-                                      <div class="col-sm-9 align-right">
-                                        <div class="acc__panel" style="display: none;">
-                                         tres
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="acc__card row">
-                                      <div class="col-sm-3">                                        
-                                        <div class="acc__title">Accordion Title #1</div>
-                                      </div>
-                                      <div class="col-sm-9 align-right">
-                                        <div class="acc__panel" style="display: none;">
-                                          cuatros
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="acc__card row">
-                                      <div class="col-sm-3">                                        
-                                        <div class="acc__title">Accordion Title #1</div>
-                                      </div>
-                                      <div class="col-sm-9 align-right">
-                                        <div class="acc__panel" style="display: none;">
-                                          Cinco.
+                                      <div class="col-sm-10 align-right">
+                                        <div class="acc__panel" >
+                                          <div class="row">
+                                            <div class="col-sm-12 mb-2"><h5>Informacion General</h5></div>
+                                            <div class="col-sm-12">
+                                              <div class="row mb-3">
+                                                <div class="col-md-1 col-sm-12"><label>Dni*</label></div>
+                                                <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                <div class="col-md-2 col-sm-12"><label>Tipo de Doc*</label></div>
+                                                <div class="col-md-2 col-sm-12 inputInline"> 
+                                                  <select class="form-control" data-val="true" data-val-required="Seleccione el tipo de documento" id="idTipoDocumento" name="idTipoDocumento"><option value="">Seleccione</option>
+                                                    <option value="1">LIBRETA ELECTORAL O DNI</option>
+                                                    <option value="2">CARNET DE EXTRANJERIA</option>
+                                                    <option value="3">REGISTRO UNICO CONTRIBUYENTES</option>
+                                                    <option value="4">PASAPORTE</option>
+                                                    <option value="5">PARTIDA NACIMIENTO -IDENTIDAD</option>
+                                                    <option value="6">OTROS</option>
+                                                  </select>
+                                                </div>
+                                                <div class="col-md-2 col-sm-12"><label>Tipo de Paciente*</label></div>
+                                                <div class="col-md-2 col-sm-12 inputInline">
+                                                  <select class="form-control" data-val="true" data-val-required="Seleccione el tipo de paciente" id="cbotppac" name="paciente.idTipoPaciente"><option value="">Seleccione</option>
+                                                    <option value="119">PARTICULAR</option>
+                                                    <option value="120">ASEGURADO</option>
+                                                    <option value="121">CONVENIO</option>
+                                                    <option value="122">SOAT</option>
+                                                    <option value="123">EXTERNO</option>
+                                                    <option value="124">EXTERNO</option>
+                                                  </select>
+                                                </div>
+                                              </div>
+                                              <div class="row mb-3">
+                                                <div class="col-md-1 col-sm-12"><label>Nombre*</label></div>
+                                                <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                <div class="col-md-2 col-sm-12"><label>Apellido Paterno*</label></div>
+                                                <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                <div class="col-md-2 col-sm-12"><label>Apellido Materno*</label></div>
+                                                <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                              </div>
+                                              
+                                              <div class="row mb-3">
+                                                <div class="col-md-1 col-sm-12"><label>Fecha*</label></div>
+                                                <div class="col-md-2 col-sm-12 inputInline"> <input class="form-control" data-val="true" data-val-required="Seleccione la fecha de inicio" id="fechaIni" name="fechaIni" type="Date" value="">
+                                                  <span class="field-validation-valid text-danger" data-valmsg-for="fechaIni" data-valmsg-replace="true"></span>
+                                                </div>
+                                                <div class="col-md-2 col-sm-12"><label>Edad*</label></div>
+                                                <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                <div class="col-md-1 col-sm-12"><label>Sexo*</label></div>
+                                                <div class="col-md-4 col-sm-12">
+                                                  <div class="form-check d-inline ">
+                                                   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                   <label class="form-check-label" for="exampleRadios1">
+                                                    Femenino
+                                                  </label>
+                                                </div>
+                                                <div class="form-check d-inline ">
+                                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                  <label class="form-check-label" for="exampleRadios2">
+                                                    Masculino
+                                                  </label>
+                                                </div>
+
+                                              </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                              <div class="col-md-1 col-sm-12"><label>Ocupación</label></div>
+                                              <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                              <div class="col-md-2 col-sm-12"><label>Grado de Instruccion</label></div>
+                                              <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                              <div class="col-md-2 col-sm-12"><label>Estado Civil</label></div>
+                                              <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                            </div>
+                                            <div class="row mb-3">
+                                              <div class="col-md-1 col-sm-12"><label>Email*</label></div>
+                                              <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                              <div class="col-md-2 col-sm-12"><label>Celular*</label></div>
+                                              <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                              <div class="col-md-2 col-sm-12"><label>Parentesco*</label></div>
+                                              <div class="col-md-2 col-sm-12 inputInline"> <select class="form-control" data-val="true" data-val-required="Seleccione el parentesco" id="paciente_idParentescoPaciente" name="paciente.idParentescoPaciente"><option value="">Seleccione</option>
+                                                <option value="40">PADRE</option>
+                                                <option value="41">MADRE</option>
+                                                <option value="42">HIJO/A</option>
+                                                <option value="43">ABUELA/O</option>
+                                                <option value="44">TIA/O</option>
+                                                <option value="45">NIETA/O</option>
+                                                <option value="46">PADRASTRO</option>
+                                                <option value="47">MADRASTRA</option>
+                                                <option value="48">SOBRINA/O</option>
+                                                <option value="49">PRIMA/O</option>
+                                                <option value="50">BIS-ABUELA/O</option>
+                                                <option value="51">AMIGA/O</option>
+                                                <option value="52">HERMANA/O</option>
+                                                <option value="53">YERNO</option>
+                                                <option value="54">NUERA</option>
+                                              </select></div>
+                                            </div>
+                                            <div class="row mb-3">
+
+                                            </div>
+                                          </div>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
+                                  <div class="acc__card row">
+                                    <div class="col-sm-2">                                        
+                                      <div class="acc__title btn btn-primary btn-menu">Ubicación</div>
+                                    </div>
+                                    <div class="col-sm-10 align-right">
+                                      <div class="acc__panel" style="display: none;">
+                                       <div class="row">
+                                       <div class="col-sm-12 mb-2"><h5>Ubicación</h5></div>
+                                       <div class="col-sm-12">
+                                              <div class="row mb-3">
+                                                <div class="col-md-2 col-sm-12"><label>Departamento</label></div>
+                                                <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                <div class="col-md-2 col-sm-12"><label>Provincia</label></div>
+                                                <div class="col-md-3 col-sm-12 inputInline"> 
+                                                <input type="text" name="name" class="form-control">
+                                                </div>
+                                                
+                                              </div>
+                                              <div class="row mb-3">
+                                                <div class="col-md-2   col-sm-12"><label>Tipo de via</label></div>
+                                                <div class="col-md-1 col-sm-12 inputInline">
+                                                  <input type="text" name="name" class="form-control">
+                                                </div>
+                                                <div class="col-md-1 col-sm-12"><label>N°</label></div>
+                                                <div class="col-md-1 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                <div class="col-md-1 col-sm-12"><label>DPTO N°</label></div>
+                                                <div class="col-md-1 col-sm-12 inputInline"> 
+                                                <input type="text" name="name" class="form-control">
+                                                </div>
+                                                <div class="col-md-1 col-sm-12"><label>Interior</label></div>
+                                                <div class="col-md-1 col-sm-12 inputInline">
+                                                  <input type="text" name="name" class="form-control">
+                                                </div>
+                                                <div class="col-md-1 col-sm-12"><label>N° de Lote</label></div>
+                                                <div class="col-md-1 col-sm-12 inputInline">
+                                                  <input type="text" name="name" class="form-control">
+                                                </div>
+                                              </div>
+                                            </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="acc__card row">
+                                  <div class="col-sm-2">                                        
+                                    <div class="acc__title btn btn-primary btn-menu">Informacion de Asegurado</div>
+                                  </div>
+                                  <div class="col-sm-9 align-right">
+                                    <div class="acc__panel" style="display: none;">
+                                     <div class="row">
+                                      <div class="col-sm-12 mb-2"><h4>Informacion de Asegurado</h4></div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
-
+                              <div class="acc__card row">
+                                <div class="col-sm-2">                                        
+                                  <div class="acc__title btn btn-primary btn-menu">Alergias</div>
+                                </div>
+                                <div class="col-sm-10 align-right">
+                                  <div class="acc__panel" style="display: none;">
+                                    <div class="row">
+                                      <div class="col-sm-12 mb-2"><h4>Alergias</h4></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="acc__card row">
+                                <div class="col-sm-2">                                        
+                                  <div class="acc__title btn btn-primary btn-menu">Notas</div>
+                                </div>
+                                <div class="col-sm-10 align-right">
+                                  <div class="acc__panel" style="display: none;">
+                                    Cinco.
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
 
-
                       </div>
-
                     </div>
                   </div>
+
+
                 </div>
-                <script src="js/cargavistaparcial.js"></script>
-                <script src="js/combosaninadoscitas.js"></script>
 
-
-                <input type="hidden" id="hdnBaseUrl" value="" />
               </div>
             </div>
-
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
+          </div>
+          <script src="js/cargavistaparcial.js"></script>
+          <script src="js/combosaninadoscitas.js"></script>
 
 
-    <!-- Main content -->
-    <!-- /.Left col -->
-    <!-- right col (We are only adding the ID to make the widgets sortable)-->
-    <!-- right col -->
-  </div>
-  <!-- /.row (main row) -->
-  <!-- /.content -->
-  <!-- /.content-wrapper -->
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
+          <input type="hidden" id="hdnBaseUrl" value="" />
+        </div>
+      </div>
+
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+</div><!-- /.container-fluid -->
+</div>
+
+
+<!-- Main content -->
+<!-- /.Left col -->
+<!-- right col (We are only adding the ID to make the widgets sortable)-->
+<!-- right col -->
+</div>
+<!-- /.row (main row) -->
+<!-- /.content -->
+<!-- /.content-wrapper -->
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+  <!-- Control sidebar content goes here -->
+</aside>
+<!-- /.control-sidebar -->
 </div>
 
 
