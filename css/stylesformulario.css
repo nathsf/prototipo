@@ -288,7 +288,7 @@ body [class*=sidebar-dark-] {
 .avatar-upload {
   position: relative;
   max-width: 205px;
-  margin: 15px auto;
+  margin: 1px auto;
 }
 .avatar-upload .avatar-edit {
   position: absolute;
@@ -323,8 +323,8 @@ body [class*=sidebar-dark-] {
     color: #6c757d;
 }
 .avatar-upload .avatar-preview {
-  width: 180px;
-  height: 180px;
+  width: 165px;
+  height: 165px;
   position: relative;
   border-radius: 0;
   border: 6px solid #F8F8F8;
@@ -337,4 +337,7 @@ body [class*=sidebar-dark-] {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.tab-content label {
+	font-size: 14px;
 }
