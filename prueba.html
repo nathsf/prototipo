@@ -51,6 +51,7 @@
       display: inline-block;
       padding: 20px 5px 5px 10px;
     }
+    
   </style>
 
 </head>
@@ -63,7 +64,7 @@
       <!-- Left navbar links -->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars" style="color:#0f5493"></i></a>
+          <a class="nav-link " data-widget="pushmenu" href="#"><i class="fas fa-bars" style="color:#0f5493"></i></a>
         </li>
 
       </ul>
@@ -124,7 +125,7 @@
                                 color:white;"> Rafael Sanchez</span>
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item menu-burger">
                               <a class="nav-link " href="/Persona">
                                 <i class="nav-icon fas fa-user-injured"></i>
                                 <p>
@@ -133,7 +134,7 @@
                                 </p>
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item menu-burger">
                               <a class="nav-link " href="/Cronograma">
                                 <i class="nav-icon fas fa-user-injured"></i>
                                 <p>
@@ -143,7 +144,7 @@
                               </a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item menu-burger">
                               <a class="nav-link " href="/Paciente">
                                 <i class="nav-icon fas fa-notes-medical"></i>
                                 <p>
@@ -153,7 +154,7 @@
                               </a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item menu-burger">
                               <a class="nav-link " href="/Paciente/AdmicionMedico">
                                 <i class="nav-icon fas fa-notes-medical"></i>
                                 <p>
@@ -164,7 +165,7 @@
                             </li>
 
 
-                            <li class="nav-item">
+                            <li class="nav-item menu-burger">
                               <a class="nav-link " href="/Tablas">
                                 <i class="nav-icon far fa-calendar-alt"></i>
                                 <p>
@@ -173,7 +174,7 @@
                                 </p>
                               </a>
                             </li>
-                            <li class="hidden-sm-up nav-item">
+                            <li class="hidden-sm-up nav-item ">
                               <a href="#" class="nav-link ">
                                 <i class="far fa-times-circle"></i>
                                 <p>
@@ -262,7 +263,7 @@
                                   <div class="acc col-sm-12 mt-3">
                                     <div class="col-sm-2 pl-0 pr-2"> 
                                       <div class="">
-                                       
+
                                         <div class="avatar-upload">
                                           <div class="avatar-edit">
                                             <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
@@ -282,145 +283,107 @@
                                       <div class="col-sm-10 align-right">
                                         <div class="acc__panel" >
                                           <div class="row">
-                                            <div class="col-sm-12 mb-2"><h5>Informacion General</h5></div>
-                                            <div class="col-sm-12">
-                                              <div class="row mb-3">
-                                                <div class="col-md-1 col-sm-12"><label>Dni*</label></div>
-                                                <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
-                                                <div class="col-md-2 col-sm-12"><label>Tipo de Doc*</label></div>
-                                                <div class="col-md-2 col-sm-12 inputInline"> 
-                                                  <select class="form-control" data-val="true" data-val-required="Seleccione el tipo de documento" id="idTipoDocumento" name="idTipoDocumento"><option value="">Seleccione</option>
-                                                    <option value="1">LIBRETA ELECTORAL O DNI</option>
-                                                    <option value="2">CARNET DE EXTRANJERIA</option>
-                                                    <option value="3">REGISTRO UNICO CONTRIBUYENTES</option>
-                                                    <option value="4">PASAPORTE</option>
-                                                    <option value="5">PARTIDA NACIMIENTO -IDENTIDAD</option>
-                                                    <option value="6">OTROS</option>
-                                                  </select>
-                                                </div>
-                                                <div class="col-md-2 col-sm-12"><label>Tipo de Paciente*</label></div>
-                                                <div class="col-md-2 col-sm-12 inputInline">
-                                                  <select class="form-control" data-val="true" data-val-required="Seleccione el tipo de paciente" id="cbotppac" name="paciente.idTipoPaciente"><option value="">Seleccione</option>
-                                                    <option value="119">PARTICULAR</option>
-                                                    <option value="120">ASEGURADO</option>
-                                                    <option value="121">CONVENIO</option>
-                                                    <option value="122">SOAT</option>
-                                                    <option value="123">EXTERNO</option>
-                                                    <option value="124">EXTERNO</option>
-                                                  </select>
-                                                </div>
+                                            <div class="col-sm-12 mb-3">
+                                             <div class="row">
+                                              <div class="col-sm-6"><h5>Informacion General</h5></div>
+                                              <div class="col-sm-5 text-right"> <button class="btn btn-primary btn-icon-small text-white" data-toggle="modal" data-target="#exampleModalCenter" type="submit" ><i class="far fa-save pr-1"></i>Guardar</button></div>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                            <div class="row mb-3">
+                                              <div class="col-md-1 col-sm-12"><label>Dni*</label></div>
+                                              <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                              <div class="col-md-2 col-sm-12"><label>Tipo de Doc*</label></div>
+                                              <div class="col-md-2 col-sm-12 inputInline"> 
+                                                <select class="form-control" data-val="true" data-val-required="Seleccione el tipo de documento" id="idTipoDocumento" name="idTipoDocumento"><option value="">Seleccione</option>
+                                                  <option value="1">LIBRETA ELECTORAL O DNI</option>
+                                                  <option value="2">CARNET DE EXTRANJERIA</option>
+                                                  <option value="3">REGISTRO UNICO CONTRIBUYENTES</option>
+                                                  <option value="4">PASAPORTE</option>
+                                                  <option value="5">PARTIDA NACIMIENTO -IDENTIDAD</option>
+                                                  <option value="6">OTROS</option>
+                                                </select>
                                               </div>
-                                              <div class="row mb-3">
-                                                <div class="col-md-1 col-sm-12"><label>Nombre*</label></div>
-                                                <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
-                                                <div class="col-md-2 col-sm-12"><label>Apellido Paterno*</label></div>
-                                                <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
-                                                <div class="col-md-2 col-sm-12"><label>Apellido Materno*</label></div>
-                                                <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                              <div class="col-md-2 col-sm-12"><label>Tipo de Paciente*</label></div>
+                                              <div class="col-md-2 col-sm-12 inputInline">
+                                                <select class="form-control" data-val="true" data-val-required="Seleccione el tipo de paciente" id="cbotppac" name="paciente.idTipoPaciente"><option value="">Seleccione</option>
+                                                  <option value="119">PARTICULAR</option>
+                                                  <option value="120">ASEGURADO</option>
+                                                  <option value="121">CONVENIO</option>
+                                                  <option value="122">SOAT</option>
+                                                  <option value="123">EXTERNO</option>
+                                                  <option value="124">EXTERNO</option>
+                                                </select>
                                               </div>
-                                              
-                                              <div class="row mb-3">
-                                                <div class="col-md-1 col-sm-12"><label>Fecha*</label></div>
-                                                <div class="col-md-2 col-sm-12 inputInline"> <input class="form-control" data-val="true" data-val-required="Seleccione la fecha de inicio" id="fechaIni" name="fechaIni" type="Date" value="">
-                                                  <span class="field-validation-valid text-danger" data-valmsg-for="fechaIni" data-valmsg-replace="true"></span>
-                                                </div>
-                                                <div class="col-md-2 col-sm-12"><label>Edad*</label></div>
-                                                <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
-                                                <div class="col-md-1 col-sm-12"><label>Sexo*</label></div>
-                                                <div class="col-md-4 col-sm-12">
-                                                  <div class="form-check d-inline ">
-                                                   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                                   <label class="form-check-label" for="exampleRadios1">
-                                                    Femenino
-                                                  </label>
-                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                              <div class="col-md-1 col-sm-12"><label>Nombre*</label></div>
+                                              <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                              <div class="col-md-2 col-sm-12"><label>Apellido Paterno*</label></div>
+                                              <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                              <div class="col-md-2 col-sm-12"><label>Apellido Materno*</label></div>
+                                              <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                              <div class="col-md-1 col-sm-12"><label>Fecha*</label></div>
+                                              <div class="col-md-2 col-sm-12 inputInline"> <input class="form-control" data-val="true" data-val-required="Seleccione la fecha de inicio" id="fechaIni" name="fechaIni" type="Date" value="">
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="fechaIni" data-valmsg-replace="true"></span>
+                                              </div>
+                                              <div class="col-md-2 col-sm-12"><label>Edad*</label></div>
+                                              <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                              <div class="col-md-1 col-sm-12"><label>Sexo*</label></div>
+                                              <div class="col-md-4 col-sm-12">
                                                 <div class="form-check d-inline ">
-                                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                  <label class="form-check-label" for="exampleRadios2">
-                                                    Masculino
-                                                  </label>
-                                                </div>
-
+                                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                 <label class="form-check-label" for="exampleRadios1">
+                                                  Femenino
+                                                </label>
                                               </div>
-                                            </div>
-
-                                            <div class="row mb-3">
-                                              <div class="col-md-1 col-sm-12"><label>Ocupación</label></div>
-                                              <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
-                                              <div class="col-md-2 col-sm-12"><label>Grado de Instruccion</label></div>
-                                              <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
-                                              <div class="col-md-2 col-sm-12"><label>Estado Civil</label></div>
-                                              <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
-                                            </div>
-                                            <div class="row mb-3">
-                                              <div class="col-md-1 col-sm-12"><label>Email*</label></div>
-                                              <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
-                                              <div class="col-md-2 col-sm-12"><label>Celular*</label></div>
-                                              <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
-                                              <div class="col-md-2 col-sm-12"><label>Parentesco*</label></div>
-                                              <div class="col-md-2 col-sm-12 inputInline"> <select class="form-control" data-val="true" data-val-required="Seleccione el parentesco" id="paciente_idParentescoPaciente" name="paciente.idParentescoPaciente"><option value="">Seleccione</option>
-                                                <option value="40">PADRE</option>
-                                                <option value="41">MADRE</option>
-                                                <option value="42">HIJO/A</option>
-                                                <option value="43">ABUELA/O</option>
-                                                <option value="44">TIA/O</option>
-                                                <option value="45">NIETA/O</option>
-                                                <option value="46">PADRASTRO</option>
-                                                <option value="47">MADRASTRA</option>
-                                                <option value="48">SOBRINA/O</option>
-                                                <option value="49">PRIMA/O</option>
-                                                <option value="50">BIS-ABUELA/O</option>
-                                                <option value="51">AMIGA/O</option>
-                                                <option value="52">HERMANA/O</option>
-                                                <option value="53">YERNO</option>
-                                                <option value="54">NUERA</option>
-                                              </select></div>
-                                            </div>
-                                            <div class="row mb-3">
+                                              <div class="form-check d-inline ">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                <label class="form-check-label" for="exampleRadios2">
+                                                  Masculino
+                                                </label>
+                                              </div>
 
                                             </div>
                                           </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="acc__card row">
-                                    <div class="col-sm-2">                                        
-                                      <div class="acc__title btn btn-primary btn-menu">Ubicación</div>
-                                    </div>
-                                    <div class="col-sm-10 align-right">
-                                      <div class="acc__panel" style="display: none;">
-                                       <div class="row">
-                                         <div class="col-sm-12 mb-2"><h5>Ubicación</h5></div>
-                                         <div class="col-sm-12">
-                                          <div class="row mb-3">
-                                            <div class="col-md-2 col-sm-12"><label>Departamento</label></div>
-                                            <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
-                                            <div class="col-md-2 col-sm-12"><label>Provincia</label></div>
-                                            <div class="col-md-3 col-sm-12 inputInline"> 
-                                              <input type="text" name="name" class="form-control">
-                                            </div>
 
+                                          <div class="row mb-3">
+                                            <div class="col-md-1 col-sm-12"><label>Ocupación</label></div>
+                                            <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                            <div class="col-md-2 col-sm-12"><label>Grado de Instruccion</label></div>
+                                            <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                            <div class="col-md-2 col-sm-12"><label>Estado Civil</label></div>
+                                            <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
                                           </div>
                                           <div class="row mb-3">
-                                            <div class="col-md-2   col-sm-12"><label>Tipo de via</label></div>
-                                            <div class="col-md-1 col-sm-12 inputInline">
-                                              <input type="text" name="name" class="form-control">
-                                            </div>
-                                            <div class="col-md-1 col-sm-12"><label>N°</label></div>
-                                            <div class="col-md-1 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
-                                            <div class="col-md-1 col-sm-12"><label>DPTO N°</label></div>
-                                            <div class="col-md-1 col-sm-12 inputInline"> 
-                                              <input type="text" name="name" class="form-control">
-                                            </div>
-                                            <div class="col-md-1 col-sm-12"><label>Interior</label></div>
-                                            <div class="col-md-1 col-sm-12 inputInline">
-                                              <input type="text" name="name" class="form-control">
-                                            </div>
-                                            <div class="col-md-1 col-sm-12"><label>N° de Lote</label></div>
-                                            <div class="col-md-1 col-sm-12 inputInline">
-                                              <input type="text" name="name" class="form-control">
-                                            </div>
+                                            <div class="col-md-1 col-sm-12"><label>Email*</label></div>
+                                            <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                            <div class="col-md-2 col-sm-12"><label>Celular*</label></div>
+                                            <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                            <div class="col-md-2 col-sm-12"><label>Parentesco*</label></div>
+                                            <div class="col-md-2 col-sm-12 inputInline"> <select class="form-control" data-val="true" data-val-required="Seleccione el parentesco" id="paciente_idParentescoPaciente" name="paciente.idParentescoPaciente"><option value="">Seleccione</option>
+                                              <option value="40">PADRE</option>
+                                              <option value="41">MADRE</option>
+                                              <option value="42">HIJO/A</option>
+                                              <option value="43">ABUELA/O</option>
+                                              <option value="44">TIA/O</option>
+                                              <option value="45">NIETA/O</option>
+                                              <option value="46">PADRASTRO</option>
+                                              <option value="47">MADRASTRA</option>
+                                              <option value="48">SOBRINA/O</option>
+                                              <option value="49">PRIMA/O</option>
+                                              <option value="50">BIS-ABUELA/O</option>
+                                              <option value="51">AMIGA/O</option>
+                                              <option value="52">HERMANA/O</option>
+                                              <option value="53">YERNO</option>
+                                              <option value="54">NUERA</option>
+                                            </select></div>
+                                          </div>
+                                          <div class="row mb-3">
+
                                           </div>
                                         </div>
                                       </div>
@@ -429,62 +392,326 @@
                                 </div>
                                 <div class="acc__card row">
                                   <div class="col-sm-2">                                        
-                                    <div class="acc__title btn btn-primary btn-menu">Informacion de Asegurado</div>
+                                    <div class="acc__title btn btn-primary btn-menu">Ubicación y Nacimiento</div>
                                   </div>
-                                  <div class="col-sm-9 align-right">
+                                  <div class="col-sm-10 align-right">
                                     <div class="acc__panel" style="display: none;">
                                      <div class="row">
-                                      <div class="col-sm-12 mb-2"><h4>Informacion de Asegurado</h4></div>
+                                       <div class="col-sm-12 mb-2"><h5>Ubicación</h5></div>
+                                       <div class="col-sm-12">
+                                        <div class="row mb-3">
+                                          <div class="col-md-2 col-sm-12"><label>Departamento</label></div>
+                                          <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                          <div class="col-md-2 col-sm-12"><label>Provincia</label></div>
+                                          <div class="col-md-3 col-sm-12 inputInline"> 
+                                            <input type="text" name="name" class="form-control">
+                                          </div>
+
+                                        </div>
+                                        <div class="row mb-3">
+                                          <div class="col-md-2   col-sm-12"><label>Tipo de via</label></div>
+                                          <div class="col-md-1 col-sm-12 inputInline">
+                                            <input type="text" name="name" class="form-control">
+                                          </div>
+                                          <div class="col-md-2 col-sm-12"><label>Nombre de Via</label></div>
+                                          <div class="col-md-1 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                          <div class="col-md-1 col-sm-12"><label>N°</label></div>
+                                          <div class="col-md-1 col-sm-12 inputInline"> 
+                                            <input type="text" name="name" class="form-control">
+                                          </div>
+                                          <div class="col-md-1 col-sm-12"><label>DPTO N°</label></div>
+                                          <div class="col-md-1 col-sm-12 inputInline">
+                                            <input type="text" name="name" class="form-control">
+                                          </div>
+
+                                        </div>
+                                        <div class="row mb-3">
+                                         <div class="col-md-2 col-sm-12"><label>Interior</label></div>
+                                         <div class="col-md-1 col-sm-12 inputInline">
+                                          <input type="text" name="name" class="form-control">
+                                        </div>
+                                        <div class="col-md-2 col-sm-12"><label>N° de Lote</label></div>
+                                        <div class="col-md-1 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                        <div class="col-md-1 col-sm-12"><label>N° Etapa</label></div>
+                                        <div class="col-md-1 col-sm-12 inputInline"> 
+                                          <input type="text" name="name" class="form-control">
+                                        </div>
+                                        <div class="col-md-1 col-sm-12"><label>N° KM</label></div>
+                                        <div class="col-md-1 col-sm-12 inputInline">
+                                          <input type="text" name="name" class="form-control">
+                                        </div>
+
+                                      </div>
+                                      <div class="row mb-3">
+                                        <div class="col-md-2 col-sm-12"><label>N° Bloque</label></div>
+                                        <div class="col-md-1 col-sm-12 inputInline">
+                                          <input type="text" name="name" class="form-control">
+                                        </div>
+                                      </div>
                                     </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="acc__card row">
-                                <div class="col-sm-2">                                        
-                                  <div class="acc__title btn btn-primary btn-menu">Alergias</div>
-                                </div>
-                                <div class="col-sm-10 align-right">
-                                  <div class="acc__panel" style="display: none;">
-                                    <div class="row">
-                                      <div class="col-sm-12 mb-2"><h4>Alergias</h4></div>
+                                    <div class="col-sm-12 mb-2"><h5>Datos de Nacimiento</h5></div>
+                                    <div class="col-sm-12 mb-2">
+                                      <div class="row mb-3">
+                                        <div class="col-md-2 col-sm-12"><label>Pais Origen</label></div>
+                                        <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                        <div class="col-md-2 col-sm-12"><label>Departamento</label></div>
+                                        <div class="col-md-3 col-sm-12 inputInline"> 
+                                          <input type="text" name="name" class="form-control">
+                                        </div>
+
+                                      </div>
+                                      <div class="row mb-3">
+                                        <div class="col-md-2 col-sm-12"><label>Provincia</label></div>
+                                        <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                        <div class="col-md-2 col-sm-12"><label>Distrito</label></div>
+                                        <div class="col-md-3 col-sm-12 inputInline"> 
+                                          <input type="text" name="name" class="form-control">
+                                        </div>
+
+                                      </div>
                                     </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="acc__card row">
-                                <div class="col-sm-2">                                        
-                                  <div class="acc__title btn btn-primary btn-menu">Notas</div>
-                                </div>
-                                <div class="col-sm-10 align-right">
-                                  <div class="acc__panel" style="display: none;">
-                                    Cinco.
                                   </div>
                                 </div>
                               </div>
                             </div>
+                            <div class="acc__card row">
+                              <div class="col-sm-2">                                        
+                                <div class="acc__title btn btn-primary btn-menu">Datos del Seguro</div>
+                              </div>
+                              <div class="col-sm-10 align-right">
+                                <div class="acc__panel" style="display: none;">
+                                 <div class="row">
+                                  <div class="col-sm-12 mb-2"><h5>Datos del Seguro</h5></div>
+                                  <div class="col-sm-12 mb-2">
+                                    <div class="row mb-3">
+                                      <div class="col-md-2 col-sm-12"><label>Tipo de Paciente</label></div>
+                                      <div class="col-md-6 col-sm-12">
+                                        <div class="form-check d-inline ">
+                                         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                         <label class="form-check-label" for="exampleRadios1">
+                                          Particular
+                                        </label>
+                                      </div>
+                                      <div class="form-check d-inline ">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                        <label class="form-check-label" for="exampleRadios2">
+                                         Asegurado/convenio
+                                       </label>
+                                     </div>
+
+                                   </div>
+                                 </div>
+                                 <div class="row mb-3">
+                                  <div class="col-md-2 col-sm-12"><label>Codigo de Plan*</label></div>
+                                  <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                  <div class="col-md-2 col-sm-12"><label>N de contrato*</label></div>
+                                  <div class="col-md-2 col-sm-12 inputInline"> 
+                                   <input type="text" name="name" class="form-control">
+                                 </div>
+                                 <div class="col-md-2 col-sm-12"><label>Aseguradora</label></div>
+                                 <div class="col-md-2 col-sm-12 inputInline">
+                                   <input type="text" name="name" class="form-control">
+                                 </div>
+                               </div>
+                               <div class="row mb-3">
+                                <div class="col-md-2 col-sm-12"><label>Contratante*</label></div>
+                                <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+
+                              </div>
+                            </div>
                           </div>
                         </div>
+                      </div>
+                    </div>
+                    <div class="acc__card row">
+                      <div class="col-sm-2">                                        
+                        <div class="acc__title btn btn-primary btn-menu">Empresa</div>
+                      </div>
+                      <div class="col-sm-10 align-right">
+                        <div class="acc__panel" style="display: none;">
+                          <div class="row">
+                            <div class="col-sm-12 mb-2"><h5>Empresa</h5></div>
+                            <div class="col-sm-12 mb-2">
+                              <div class="row mb-3">
+                                <div class="col-md-2 col-sm-12"><label>RUC</label></div>
+                                <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                <div class="col-md-2 col-sm-12"><label>Razón Social</label></div>
+                                <div class="col-md-3 col-sm-12 inputInline"> 
+                                  <input type="text" name="name" class="form-control">
+                                </div>
 
+                              </div>
+                              <div class="row mb-3">
+                                <div class="col-md-2 col-sm-12"><label>Estado del RUC</label></div>
+                                <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                <div class="col-md-2 col-sm-12"><label>Condición del RUC</label></div>
+                                <div class="col-md-3 col-sm-12 inputInline"> 
+                                  <input type="text" name="name" class="form-control">
+                                </div>
+
+                              </div>
+                              <div class="row mb-3">
+
+                                <div class="col-md-2 col-sm-12"><label>Domicilio fiscal</label></div>
+                                <div class="col-md-3 col-sm-12 inputInline"> 
+                                  <input type="text" name="name" class="form-control">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="acc__card row">
+                      <div class="col-sm-2">                                        
+                        <div class="acc__title btn btn-primary btn-menu">Datos del acompañante</div>
+                      </div>
+                      <div class="col-sm-10 align-right">
+                        <div class="acc__panel" style="display: none;">
+                          <div class="row">
+                            <div class="col-sm-12 mb-2"><h5>Datos del Acompañante</h5></div>
+                            <div class="col-sm-12 mb-2">
+                              <div class="row mb-3">
+                                <div class="col-md-2 col-sm-12"><label>Tipo de Doc*</label></div>
+                                <div class="col-md-2 col-sm-12 inputInline"> 
+                                  <select class="form-control" data-val="true" data-val-required="Seleccione el tipo de documento" id="idTipoDocumento" name="idTipoDocumento"><option value="">Seleccione</option>
+                                    <option value="1">LIBRETA ELECTORAL O DNI</option>
+                                    <option value="2">CARNET DE EXTRANJERIA</option>
+                                    <option value="3">REGISTRO UNICO CONTRIBUYENTES</option>
+                                    <option value="4">PASAPORTE</option>
+                                    <option value="5">PARTIDA NACIMIENTO -IDENTIDAD</option>
+                                    <option value="6">OTROS</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-1 col-sm-12"><label>N° de Doc</label></div>
+                                <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                <div class="col-md-2 col-sm-12"><label>Apellido Paterno</label></div>
+                                <div class="col-md-2 col-sm-12 inputInline"> 
+                                  <input type="text" name="name" class="form-control">
+                                </div>
+
+
+                              </div>
+                              <div class="row mb-3">
+                               <div class="col-md-2 col-sm-12"><label>Apellido Materno</label></div>
+                               <div class="col-md-2 col-sm-12 inputInline">
+                                <input type="text" name="name" class="form-control">
+                              </div>
+                              <div class="col-md-1 col-sm-12"><label>Nombres</label></div>
+                              <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                              <div class="col-md-2 col-sm-12"><label>Parentesco</label></div>
+                              <div class="col-md-2 col-sm-12 inputInline"> 
+                                <select class="form-control small-input" id="paciente_idParentescoAcompa_ante" name="paciente.idParentescoAcompañante"><option value="">Seleccione</option>
+                                  <option value="40">PADRE</option>
+                                  <option value="41">MADRE</option>
+                                  <option value="42">HIJO/A</option>
+                                  <option value="43">ABUELA/O</option>
+                                  <option value="44">TIA/O</option>
+                                  <option value="45">NIETA/O</option>
+                                  <option value="46">PADRASTRO</option>
+                                  <option value="47">MADRASTRA</option>
+                                  <option value="48">SOBRINA/O</option>
+                                  <option value="49">PRIMA/O</option>
+                                  <option value="50">BIS-ABUELA/O</option>
+                                  <option value="51">AMIGA/O</option>
+                                  <option value="52">HERMANA/O</option>
+                                  <option value="53">YERNO</option>
+                                  <option value="54">NUERA</option>
+                                </select>
+                              </div>
+
+
+                            </div>
+                            <div class="row mb-3">
+                             <div class="col-md-2 col-sm-12"><label>Edad</label></div>
+                             <div class="col-md-2 col-sm-12 inputInline">
+                              <input type="text" name="name" class="form-control">
+                            </div>
+                            <div class="col-md-1 col-sm-12"><label>Celular Personal</label></div>
+                            <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                            <div class="col-md-2 col-sm-12"><label>Correo Electronico</label></div>
+                            <div class="col-md-2 col-sm-12 inputInline"> 
+                              <input type="text" name="name" class="form-control">
+                            </div>
+
+
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-
-
                 </div>
-
               </div>
             </div>
           </div>
-          <script src="js/cargavistaparcial.js"></script>
-          <script src="js/combosaninadoscitas.js"></script>
 
-
-          <input type="hidden" id="hdnBaseUrl" value="" />
         </div>
       </div>
+    </div>
 
-    </div><!-- /.col -->
-  </div><!-- /.row -->
+
+  </div>
+
+</div>
+</div>
+</div>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title" id="exampleModalLongTitle">CLÁUSULA DE CONSENTIMIENTO DE TRATAMIENTO DE DATOS PERSONALES </h5>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-sm-12" id="printableArea">
+          <h5 >CLÁUSULA DE CONSENTIMIENTO DE TRATAMIENTO DE DATOS PERSONALES </h5>
+          <p>(Ley General de Salud N° 26842, Ley de Protección de datos N°29733 y normas complementarias)</p>
+          <p>Yo, (DATOS DEL PACIENTE)</p>
+          <p> Nombres y Apellidos: </p>
+          <p> Fecha:</p>
+          <p>Con DNI o Documento de identidad:</p>
+          <p>Edad:</p>
+
+          <p>De ser el caso,</p>
+          <p>Nombres y Apellidos del representante u apoderado:</p>  
+          <p>Con DNI o Documento de Identidad:</p> 
+
+
+          <p>En la Clínica ESPECIALIDADES MEDICAS, nos preocupamos por la protección y privacidad de los datos personales de nuestros pacientes. Por ello, queremos informarte que de acuerdo con lo establecido en la Ley N° 29733 – Ley de Protección de Datos Personales y su Reglamento, estamos autorizados a dar tratamiento a tus datos personales que son necesarios para que puedas recibir una atención médica, pues de no obtenerlos no podremos cumplir con dicha atención.</p>
+
+          <p>
+            Nos autorizas a utilizar tus datos personales para las siguientes finalidades:<br>
+            - Realizar encuestas de satisfacción para mejorar la calidad de los servicios que ofrecemos.<br>
+            - Enviar comunicaciones referidas a nuevos servicios y promociones.
+
+          </p>
+          <p class="pt-5">Firma y Huella digital</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="window.print();return false;">Save changes</button>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/cargavistaparcial.js"></script>
+<script src="js/combosaninadoscitas.js"></script>
+
+
+<input type="hidden" id="hdnBaseUrl" value="" />
+</div>
+</div>
+
+</div><!-- /.col -->
+</div><!-- /.row -->
 </div><!-- /.container-fluid -->
 </div>
 

@@ -34,7 +34,7 @@ body .nav-sidebar > .nav-item:hover {
 body .form-control.small-input {
     padding: 0rem 1rem;
     font-size: 12px;
-    height: calc(1.7rem + 2px);
+    height: calc(2.1rem + 2px);
 }
 
 .card-cem {
@@ -325,6 +325,7 @@ body [class*=sidebar-dark-] {
 .avatar-upload .avatar-preview {
   width: 180px;
   height: 180px;
+  margin: 0 auto;
   position: relative;
   border-radius: 0;
   border: 6px solid #F8F8F8;
@@ -338,3 +339,62 @@ body [class*=sidebar-dark-] {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (min-width: 992px) {
+aside.main-sidebar {
+	width: 4.6rem;
+}
+
+body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header {
+	    margin-left: 74px;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar, .sidebar-mini.sidebar-collapse .main-sidebar::before {
+    margin-left: 0;
+    width: 250px;
+
+ }
+.sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header {
+    margin-left: 15.6rem!important;
+}
+.sidebar-mini.sidebar-collapse .brand-text, .sidebar-mini.sidebar-collapse .nav-sidebar .nav-link p, .sidebar-mini.sidebar-collapse .sidebar .user-panel>.info {
+    margin-left: 0px;
+    opacity: 1;
+    visibility: visible;
+}
+.main-sidebar .brand-text, .main-sidebar .logo-xl, .main-sidebar .logo-xs, .sidebar .nav-link p, .sidebar .user-panel .info {
+    transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease;
+    opacity: 0;
+}
+.sidebar-mini.sidebar-collapse.layout-fixed .brand-link {
+    width: 15.6rem;
+}
+.layout-fixed .brand-link {
+	    padding: .5rem 0;
+}
+
+aside.open{
+	width: 250px;
+}
+.open.main-sidebar .brand-text, .open.main-sidebar .logo-xl, .open.main-sidebar .logo-xs, .open .sidebar .nav-link p, .open.sidebar .user-panel .info {
+    transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease;
+    opacity: 1;
+    margin-left: 0px;
+}
+
+}
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 60%;
+
+    }
+    .modal-dialog{
+      overflow-y: initial !important
+}
+.modal-body{
+  height: 500px;
+  overflow-y: auto;
+}
+}
+

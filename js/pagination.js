@@ -5,3 +5,12 @@
         }
     } );
 } );
+
+$("li.nav-item.menu-burger").hover(
+  function () {
+    $("aside").addClass('open');
+  }, 
+  function () {
+    $("aside").removeClass('open');
+  }
+  );
