@@ -1,0 +1,903 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+	<title>Sistema Web | His</title>
+
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="Content/plugins/fontawesome-free/css/all.min.css">
+	<!-- Ionicons -->
+	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<!-- Tempusdominus Bbootstrap 4 -->
+	<link rel="stylesheet" href="Content/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+	<!-- iCheck -->
+	<link rel="stylesheet" href="Content/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+	<!-- JQVMap -->
+	<link rel="stylesheet" href="Content/plugins/jqvmap/jqvmap.min.css">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="Content/dist/css/adminlte.min.css">
+	<!-- overlayScrollbars -->
+	<link rel="stylesheet" href="Content/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+	<!-- Daterange picker -->
+	<link rel="stylesheet" href="Content/plugins/daterangepicker/daterangepicker.css">
+	<!-- summernote -->
+	<link rel="stylesheet" href="Content/plugins/summernote/summernote-bs4.css">
+
+	<!-- buscar -->
+	<link rel="stylesheet" href="Content/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+	<link href="css/stylesformulario.css" rel="stylesheet" />
+
+	<!-- Google Font: Source Sans Pro -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+	<script src="lib/jquery/dist/jquery.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/sweetalert.js"></script>
+
+	<style type="text/css">
+		.user-panel img {
+			height: auto;
+			width: 3.1rem;
+		}
+	</style>
+
+	<style type="text/css">
+		.user-panel .info {
+			display: inline-block;
+			padding: 20px 5px 5px 10px;
+		}
+	</style>
+
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+	<div class="wrapper">
+
+		<!-- Navbar -->
+
+		<nav class="main-header navbar navbar-expand navbar-light" style="background-color: #f4f6f9;border-bottom:#f4f6f9">
+			<!-- Left navbar links -->
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars" style="color:#0f5493"></i></a>
+				</li>
+
+			</ul>
+
+			<!-- SEARCH FORM -->
+			<!-- Right navbar links -->
+			<ul class="navbar-nav ml-auto">
+
+				<!-- Messages Dropdown Menu -->
+				<!-- Notifications Dropdown Menu -->
+				<div class="">
+					<button type="button" class="btn btn-secondary dropdown-toggle hidden-sm-down" style="background: none;
+					border: none;color: #0f5493;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<img style="width:24px;border-radius:50%;border:2px solid #0f5493;margin-right:9px;" src="/images/profile.png" /><span class="bold" style="color:#0f5493">Bienvenido, Rafael Sanchez</span>
+				</button>
+				<div class="dropdown-menu dropdown-menu-right">
+					<button class="dropdown-item" type="button"><img style="margin-right: 9px;" src="images/back.png" /><span> Panel </span></button>
+					<button class="dropdown-item" type="button"><img style="margin-right: 9px;" src="images/off.png" /><span> Cerrar Sesion </span></button>
+
+				</div>
+			</div>
+
+		</ul>
+	</nav>
+
+	<!-- /.navbar -->
+	<!-- Main Sidebar Container -->
+	<aside class="main-sidebar sidebar-dark-primary elevation-4">
+		<!-- Brand Logo -->
+		<!-- Sidebar -->
+		<div class="sidebar">
+                <!-- Sidebar user panel (optional)
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="/Content/dist/img/avatar5.png" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Rafael Sanchez</a>
+                    </div>
+                </div>
+              -->
+              <!-- Sidebar Menu -->
+              <nav class="mt-2">
+               <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                        	with font-awesome or any other icon font library -->
+                        	<li style="margin-bottom: 1rem;">
+                        		<a href="index3.html" class="brand-link">
+                        			<img src="Content/dist/img/cem2.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                        			style="opacity: .8">
+                        			<span class="brand-text font-weight-light"><font face="Kaushan Script, coursive  ">HIS</font></span>
+
+                        		</a>
+                        	</li>
+                        	<li class="hidden-sm-up">
+                        		<a href="#" class="nav-link ">
+                        			<img style="width:35px;border-radius:50%;border:2px solid white;margin-right:9px;" src="images/profile.png" /><span style="font-weight: bold;
+                        			color:white;"> Rafael Sanchez</span>
+                        		</a>
+                        	</li>
+                        	<li class="nav-item">
+                        		<a class="nav-link " href="/Persona">
+                        			<i class="nav-icon fas fa-user-injured"></i>
+                        			<p>
+                        				Gestionar Personal
+
+                        			</p>
+                        		</a>
+                        	</li>
+                        	<li class="nav-item">
+                        		<a class="nav-link " href="/Cronograma">
+                        			<i class="nav-icon fas fa-user-injured"></i>
+                        			<p>
+                        				Horario de Medico
+
+                        			</p>
+                        		</a>
+                        	</li>
+
+                        	<li class="nav-item">
+                        		<a class="nav-link " href="/Paciente">
+                        			<i class="nav-icon fas fa-notes-medical"></i>
+                        			<p>
+                        				Reserva de Citas
+
+                        			</p>
+                        		</a>
+                        	</li>
+
+                        	<li class="nav-item">
+                        		<a class="nav-link " href="/Paciente/AdmicionMedico">
+                        			<i class="nav-icon fas fa-notes-medical"></i>
+                        			<p>
+                        				Listado de Citas
+
+                        			</p>
+                        		</a>
+                        	</li>
+
+
+                        	<li class="nav-item">
+                        		<a class="nav-link " href="/Tablas">
+                        			<i class="nav-icon far fa-calendar-alt"></i>
+                        			<p>
+                        				Gestion de tablas
+
+                        			</p>
+                        		</a>
+                        	</li>
+                        	<li class="hidden-sm-up nav-item">
+                        		<a href="#" class="nav-link ">
+                        			<i class="far fa-times-circle"></i>
+                        			<p>
+                        				Gestion de tablas
+
+                        			</p>
+                        		</a>
+                        	</li>
+                        	<li class="hidden-sm-up nav-item">
+                        		<a href="#" class="nav-link ">
+                        			<i class="far fa-times-circle"></i> <p>
+                        				Gestion de tablas
+
+                        			</p>
+                        		</a>
+                        	</li>
+
+
+                        </ul>
+                      </nav>
+                      <!-- /.sidebar-menu -->
+                    </div>
+                    <!-- /.sidebar -->
+                  </aside>
+
+                  <!-- Content Wrapper. Contains page content -->
+                  <div class="content-wrapper">
+                   <!-- Content Header (Page header) -->
+                   <div class="content-header">
+                    <div class="card-cem container">
+                     <div class="row mb-2">
+                      <div class="col-sm-6">
+                       <h1 class="m-0 text-dark"></h1>
+                     </div><!-- /.col -->
+                     <div class="col-sm-12" style="padding: 1rem;">
+                       <div class="layout-content">
+                        <div class="layout-content-body">
+
+
+                         <div class="container">
+                          <div class="row">
+                           <div class="col-sm-12 left" style="height: 20px;">
+                            <div class="card card-primary card-his">
+                             <div class="card-header card-shadow">
+                              <h2>Cierre de Caja Ambulatoria</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12" style="">
+                        <div class="row mb-5" style="padding-top:20px;">
+                         <div class="col-sm-12 pb-3" style="    border: 1px solid rgba(128, 128, 128, 0.29);
+                         border-radius: 9px;
+                         margin-top: -4px;
+                         padding-top: 1rem;
+                         padding-left: 21px;
+                         padding-right: 21px;">
+                         <div class="col-sm-12 bg-light p-2 mb-3">
+                           <div class="row">
+                             <div class="col-md-9">
+                               <div class="row">
+                                 <div class="col-md-4">
+                                  <p class="p-0 m-0">Caja: 001</p>
+                                  <p class="p-0 m-0">MAC: a231f2adss542</p>
+                                  <p class="p-0 m-0">Usuario: cdiaz</p>
+                                </div>
+                                <div class="col-md-4">
+                                 <p class="p-0 m-0">Fecha: 13/05/2020</p>
+                                 <p class="p-0 m-0">Hora: 19:05:57</p>
+                                 <p class="p-0 m-0">Nombre: Carmen Dias de la Torre</p>
+                               </div>
+                               <div class="col-md-4">
+                                 <p class="p-0 m-0">Fecha Ini: 13/5/2020 - 07:01:06</p>
+                                 <p class="p-0 m-0">Fecha Fin: 13/5/2020 - 19:05:57</p>
+                               </div>
+                             </div>
+                           </div>
+                           <div class="col"></div>
+                           <div class="col-md-1">
+                             <button type="button" class="form-control btn-danger">Cancelar</button>
+                           </div>
+                         </div>
+                       </div>
+                       <div class="col-sm-12">
+                         <div class="row">
+                           <h5 class="font-weight-bold">Listado de Cobranzas</h5>
+                         </div>
+                         <div class="row">
+                           <div class="col-sm-12">
+                             <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col">N</th>
+                                  <th scope="col">Num. Comp.</th>
+                                  <th scope="col">F.Emision</th>
+                                  <th scope="col">Hora</th>
+                                  <th scope="col">T.Paciente</th>
+                                  <th scope="col">Nombre de paciente</th>
+                                  <th scope="col">DNI PAC</th>
+                                  <th scope="col">HCE</th>
+                                  <th scope="col">Med. Pago</th>
+                                  <th scope="col">Tarjeta</th>
+                                  <th scope="col">Moneda</th>
+                                  <th scope="col">Total</th>
+                                  <th scope="col">Estado</th>
+                                </tr>
+                                <tr class="table-active">
+                                  <td>Factura</td>
+                                  <td colspan="12"></td>
+
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr class="table-active">
+                                  <td>Subtotal</td>
+                                  <td colspan="10"></td>
+                                  <td>764.40</td>
+                                  <td colspan="1"></td>
+
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="col-sm-12">
+                           <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">N</th>
+                                <th scope="col">Num. Comp.</th>
+                                <th scope="col">F.Emision</th>
+                                <th scope="col">Hora</th>
+                                <th scope="col">T.Paciente</th>
+                                <th scope="col">Nombre de paciente</th>
+                                <th scope="col">DNI PAC</th>
+                                <th scope="col">HCE</th>
+                                <th scope="col">Med. Pago</th>
+                                <th scope="col">Tarjeta</th>
+                                <th scope="col">Moneda</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Estado</th>
+                              </tr>
+                              <tr class="table-active">
+                                <td>Boleta</td>
+                                <td colspan="12"></td>
+
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr class="table-active">
+                                <td>Subtotal</td>
+                                <td colspan="10"></td>
+                                <td>525.40</td>
+                                <td colspan="1"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="col-sm-12">
+                         <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">N</th>
+                              <th scope="col">Num. Comp.</th>
+                              <th scope="col">F.Emision</th>
+                              <th scope="col">Hora</th>
+                              <th scope="col">T.Paciente</th>
+                              <th scope="col">Nombre de paciente</th>
+                              <th scope="col">DNI PAC</th>
+                              <th scope="col">HCE</th>
+                              <th scope="col">Med. Pago</th>
+                              <th scope="col">Tarjeta</th>
+                              <th scope="col">Moneda</th>
+                              <th scope="col">Total</th>
+                              <th scope="col">Estado</th>
+                            </tr>
+                            <tr class="table-active">
+                              <td colspan="2">Nota de Crédito</td>
+                              <td colspan="11"></td>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                            </tr>
+                            <tr class="table-active">
+                              <td>Subtotal</td>
+                              <td colspan="10"></td>
+                              <td>168.70</td>
+                              <td colspan="1"></td>
+
+                            </tr>
+                            <tr class="" style="border-top: 2px solid #333232;">
+                              <td colspan="2">Total General</td>
+                              <td colspan="9"></td>
+                              <td>1,121.10</td>
+                              <td colspan="1"></td>
+
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p class="font-weight-bold">Arqueo de Caja</p>
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col" width="50px" style="padding: 5px 0 5px;">N°</th>
+                              <th scope="col">Medio de Pago</th>
+                              <th scope="col">Tarjeta</th>
+                              <th scope="col">Tipo de tarjeta</th>
+                              <th scope="col">Divisa</th>
+                              <th scope="col">Monto sistema</th>
+                              <th scope="col">Monto Usuario</th>
+                              <th scope="col">Diferencia</th>
+                              <th scope="col">Motivo</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td> 
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <p>Observaciones</p>
+                        <form action="/action_page.php" id="usrform">
+                        <textarea rows="4" style="width: 100%" name="comment" form="usrform">
+Escriba sus observaciones...</textarea>
+                          
+                        </div>
+
+                      <div class="col"></div>
+                      <div class="col-md-3">
+                        <p class="font-weight-bold">Resumen</p>
+
+                        <div class="row">
+                          <div class="col-sm-8 d-block">
+                          <p style="line-height: 0;padding: 8px 0;">Venta Total</p>
+                          <p style="line-height: 0;padding: 8px 0;">Venta Anuladas</p>
+                          <p style="line-height: 0; padding: 8px 0;">Venta Pendientes de cobro</p>
+                          <p style="line-height: 0; padding: 8px 0;">Diferencia</p>
+                          </div>
+                          <div class="col-sm-4">
+                            <p style="line-height: 0; padding: 8px 0;">1,118.90</p>
+                            <p style="line-height: 0; padding: 8px 0;">1,118.90</p>
+                            <p style="line-height: 0; padding: 8px 0;">-</p>
+                            <p style="line-height: 0; padding: 8px 0;">1,118.90</p>
+
+                          </div>
+                          
+                        </div>
+                        <div class="row" style="border-top:2px solid gray;padding-top: 1rem;">
+                          
+                          <div class="col-sm-8">
+                            <p >Monto en caja de usuario</p>
+                          </div>
+                          <div class="col-sm-4">
+                            <p >1,118.90</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <button type="button" class="form-control bg-primary">Registrar cierre</button>
+                          </div>
+                          <div class="col-sm-6">
+                            <button type="button" class="form-control bg-primary">Cancelar</button>
+                          </div>
+                        </div>
+                        
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+</form>
+
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-sm-12">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="buscarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document" style="max-width: 50%;">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Paciente SITEDS</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       <span aria-hidden="true">&times;</span>
+     </button>
+   </div>
+   <div class="modal-body">
+    <div class="col-sm-12">
+     <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+       <a class="nav-link active text-center" data-toggle="tab" href="#tabs-1" role="tab" style="font-size: 16px;font-weight:500;">Cobertura servicios</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link text-center" data-toggle="tab" href="#tabs-2" role="tab" style="font-size: 16px;font-weight:500;"> Contacto Seguro/empresa</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link text-center" data-toggle="tab" href="#tabs-3" role="tab" style="font-size: 16px;font-weight:500;">Plan Paciente</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link text-center" data-toggle="tab" href="#tabs-4" role="tab" style="font-size: 16px;font-weight:500;">Documentos</a>
+     </li>
+   </ul><!-- Tab panes -->
+   <div class="tab-content">
+    <div class="tab-pane active" id="tabs-1" role="tabpanel">
+     <div class="col-sm-12">
+      <div class="col-sm-12 mt-2">
+
+       <div class="row">
+        <div class="col-sm-6">
+         <label>SITEDS</label>
+         <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+       </div>
+       <div class="col-sm-6">
+         <label>Estado Seg.</label>
+         <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+       </div>
+
+       <div class="col-sm-6">
+         <label>Cod Aseg.</label>
+         <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+       </div>
+       <div class="col-sm-6">
+         <label>Fecha Vige.</label>
+         <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+       </div>
+       <div class="col-sm-6">
+         <label>N° Placa</label>
+         <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+       </div>
+       <div class="col-sm-6">
+         <label>Poliza</label>
+         <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+       </div>
+       <div class="col-sm-12">
+         <label>Beneficio</label>
+         <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+       </div>
+       <div class="col-sm-6">
+         <label>Parentesco</label>
+         <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+       </div>
+       <div class="col-sm-6">
+         <label>% Cob.</label>
+         <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+       </div>
+     </div>
+
+   </div>
+ </div>
+</div>
+<div class="tab-pane" id="tabs-2" role="tabpanel">
+ <div class="col-sm-12">
+  <div class="col-sm-12 mt-2">
+
+   <div class="row">
+    <div class="col-sm-12">
+     <label>Ejecutivo</label>
+     <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+   </div>
+   <div class="col-sm-6">
+     <label>Teléfono</label>
+     <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+   </div>
+
+   <div class="col-sm-6">
+     <label>Cod llam.</label>
+     <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+   </div>
+
+   <div class="col-sm-12 mt-2">
+     <div class="row">
+      <div class="col-sm-6"><p>Gen. fecha y hora</p></div>
+      <div class="col-sm-6">
+       <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
+       <label class="form-check-label" for="exampleRadios1"><span>13/05/2020 - 5:58pm</span>
+
+       </label>
+     </div>
+   </div>
+
+
+
+
+ </div>
+
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="tab-pane" id="tabs-3" role="tabpanel">
+ <div class="col-sm-12">
+  <div class="col-sm-12 mt-2">
+
+   <div class="row">
+
+
+
+
+
+
+
+     <div class="col-sm-6">
+      <label>Tipo Paciente</label>
+      <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+    </div>
+    <div class="col-sm-6">
+      <label>Mec. Pago</label>
+      <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+    </div>
+    <div class="col-sm-6">
+      <label>Aseguradora</label>
+      <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+    </div>
+    <div class="col-sm-6">
+      <label>Contratante</label>
+      <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+    </div>
+    <div class="col-sm-6">
+      <label>Deducible</label>
+      <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+    </div>
+    <div class="col-sm-6">
+      <label>Coaseguro:</label>
+      <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+<div class="tab-pane" id="tabs-4" role="tabpanel">
+  <div class="col-sm-12">
+   <div class="col-sm-12 mt-2">
+
+    <div class="row">
+     <div class="col-sm-6">
+      <label>Tipo documento</label>
+      <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+    </div>
+    <div class="col-sm-6">
+      <label>N° documento.</label>
+      <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+    </div>
+
+    <div class="col-sm-12">
+      <label>Ejecutivo</label>
+      <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+    </div>
+    <div class="col-sm-6">
+      <label>Monto S/</label>
+      <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+    </div>
+    <div class="col-sm-6">
+      <label>Total S/</label>
+      <input class="form-control  small-input siteds-input" data-val="true" data-val-required="Ingrese la edad"  id="edad" name="edad" type="text" value="">
+    </div>
+    <div class="col-sm-12 mt-2">
+     <div class="row">
+      <div class="col-sm-6"><p>Gen. fecha y hora</p></div>
+      <div class="col-sm-6">
+       <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
+       <label class="form-check-label" for="exampleRadios1"><span>13/05/2020 - 5:58pm</span>
+
+       </label>
+     </div>
+   </div>
+
+
+
+
+ </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+ <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+ <button type="button" class="btn btn-primary">Save changes</button>
+</div>
+</div>
+</div>
+</div>
+<script src="js/cargavistaparcial.js"></script>
+<script src="js/combosaninadoscitas.js"></script>
+
+
+<input type="hidden" id="hdnBaseUrl" value="" />
+</div>
+</div>
+
+</div><!-- /.col -->
+</div><!-- /.row -->
+</div><!-- /.container-fluid -->
+</div>
+
+
+<!-- Main content -->
+<!-- /.Left col -->
+<!-- right col (We are only adding the ID to make the widgets sortable)-->
+<!-- right col -->
+</div>
+<!-- /.row (main row) -->
+<!-- /.content -->
+<!-- /.content-wrapper -->
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+	<!-- Control sidebar content goes here -->
+</aside>
+<!-- /.control-sidebar -->
+</div>
+
+
+<!-- ./wrapper -->
+<!-- jQuery -->
+<script src="Content/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="Content/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+	$.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="Content/plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="Content/plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="Content/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="Content/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="Content/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="Content/plugins/moment/moment.min.js"></script>
+<script src="Content/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="Content/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="Content/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="Content/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="Content/dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="Content/dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="Content/dist/js/demo.js"></script>
+
+<!--buscar-->
+<script src="Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="Content/plugins/datatables/jquery.dataTables.js"></script>
+<script src="Content/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<script src="js/pagination.js"></script>
+
+
+
+<script src="lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+
+</body>
+</html>

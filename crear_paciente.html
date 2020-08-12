@@ -213,7 +213,7 @@
                          <div class="layout-content">
                           <div class="layout-content-body">
                            <div class="container">
-                            <div class="row" id="accordion">
+                            <div class="row " id="accordion">
 
                               <div class="col-sm-12" id="formpaciente">
                                 <form action="/Paciente/Create" method="post" novalidate="novalidate">    <div class="col-sm-12 text-center pt-2 pb-4 card-height">
@@ -223,8 +223,8 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-sm-12" id="headingOne">
-                                  <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="col-sm-12 accordion" id="headingOne">
+                                  <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="acc-icons">
                                     <div class="card card-primary">
                                       <div class="card-header" >
                                         <div class="row">
@@ -232,7 +232,7 @@
                                             <h5>Datos del paciente</h5>
                                           </div>
                                           <div class="col-sm-6 text-right">
-                                            <i style="font-size: 30px;" class="fas fa-plus fx-5"></i>
+                                             
                                           </div>
                                         </div>
                                       </div>
@@ -603,8 +603,8 @@
                                   </div>
                                 </div>
 
-                                <div class="col-sm-12" id="headingTwo">
-                                  <a class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="col-sm-12 accordion" id="headingTwo">
+                                  <a class="collapsed acc-icons" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     <div class="card card-primary">
                                       <div class="card-header">
                                         <div class="row">
@@ -612,7 +612,6 @@
                                             <h5>Ubicación</h5>
                                           </div>
                                           <div class="col-sm-6 text-right">
-                                            <i style="font-size: 30px;" class="fas fa-plus fx-5"></i>
                                           </div>
                                         </div>
                                       </div>
@@ -735,17 +734,15 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-sm-12" id="headingThree">
-                                  <a class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="col-sm-12 accordion" id="headingThree">
+                                  <a class="collapsed acc-icons" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     <div class="card card-primary">
                                       <div class="card-header">
                                         <div class="row">
                                           <div class="col-sm-6 card-title">
                                             <h5>Datos nacimiento</h5>
                                           </div>
-                                          <div class="col-sm-6 text-right">
-                                            <i style="font-size: 30px;" class="fas fa-plus fx-5"></i>
-                                          </div>
+                                          
                                         </div>
                                       </div>
                                     </div>
@@ -807,241 +804,16 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-sm-12" id="divpacotros" style="display: none;">
-                                  <a data-toggle="collapse" href="#collapseotroscompañia" role="button" aria-expanded="false" aria-controls="collapseotroscompañia">
-                                    <div class="card card-primary">
-                                      <div class="card-header">
-                                        <div class="row">
-                                          <div class="col-sm-6 card-title">
-                                            <h5>Otros</h5>
-                                          </div>
-                                          <div class="col-sm-6 text-right">
-                                            <i style="font-size: 30px;" class="fas fa-plus fx-5"></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </a>
-                                  <div class="card">
-                                    <div class="collapse " id="collapseotroscompañia">
-                                      <div id="actcompañia" class="card-body" style="display:none;">
-                                        <div class="row pb-2">
-                                          <div class="col-sm-3">
-                                            <div class="row">
-                                              <div class="col-sm-5">
-                                                <label for="cobertura">Cobertura</label>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <input class="form-control small-input" id="paciente_coberturaCompa_ia" name="paciente.coberturaCompañia" type="text" value="">
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-sm-3">
-                                            <div class="row">
-                                              <div class="col-sm-5">
-                                                <label for="nroatenmed">Ord. Atencion medica</label>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <input class="form-control small-input" id="paciente_ordenAtencionMedicaCompa_ia" name="paciente.ordenAtencionMedicaCompañia" type="text" value="">
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-sm-3">
-                                            <div class="row">
-                                              <div class="col-sm-5">
-                                                <label for="nomaseg">Nombre de la Aseguradora</label>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <input class="form-control small-input" id="paciente_nombreAseguradoraCompa_ia" name="paciente.nombreAseguradoraCompañia" type="text" value="">
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-sm-3">
-                                            <div class="row">
-                                              <div class="col-sm-5">
-                                                <label for="codaseg">Cod. del asegurado</label>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <input class="form-control small-input" id="paciente_codigoAseguradoCompa_ia" name="paciente.codigoAseguradoCompañia" type="text" value="">
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="row pb-3">
-                                          <div class="col-sm-3">
-                                            <div class="row">
-                                              <div class="col-sm-5">
-                                                <label for="poliza">Poliza</label>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <input class="form-control small-input" id="paciente_polizaCompa_ia" name="paciente.polizaCompañia" type="text" value="">
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-sm-3">
-                                            <div class="row">
-                                              <div class="col-sm-5">
-                                                <label for="cboparentesco2">Parentesco</label>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <select class="form-control small-input" id="paciente_idParentescoCompa_ia" name="paciente.idParentescoCompañia"><option value="">Seleccione</option>
-                                                  <option value="40">PADRE</option>
-                                                  <option value="41">MADRE</option>
-                                                  <option value="42">HIJO/A</option>
-                                                  <option value="43">ABUELA/O</option>
-                                                  <option value="44">TIA/O</option>
-                                                  <option value="45">NIETA/O</option>
-                                                  <option value="46">PADRASTRO</option>
-                                                  <option value="47">MADRASTRA</option>
-                                                  <option value="48">SOBRINA/O</option>
-                                                  <option value="49">PRIMA/O</option>
-                                                  <option value="50">BIS-ABUELA/O</option>
-                                                  <option value="51">AMIGA/O</option>
-                                                  <option value="52">HERMANA/O</option>
-                                                  <option value="53">YERNO</option>
-                                                  <option value="54">NUERA</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-sm-3">
-                                            <div class="row">
-                                              <div class="col-sm-5">
-                                                <label for="fechinivig">Inicio de vig.</label>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <input class="form-control" id="paciente_inicioVigenciaCompa_ia" name="paciente.inicioVigenciaCompañia" type="text" value="">
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-sm-3">
-                                            <div class="row">
-                                              <div class="col-sm-5">
-                                                <label for="fechfinvig">Fin de vig.</label>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <input class="form-control" id="paciente_finVigenciaCompa_ia" name="paciente.finVigenciaCompañia" type="text" value="">
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="row">
-                                          <div class="col-sm-3">
-                                            <div class="row">
-                                              <div class="col-sm-5">
-                                                <label for="tpplansalud">Tip Plan de salud</label>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <input class="form-control" id="paciente_tipoPlanSaludCompa_ia" name="paciente.tipoPlanSaludCompañia" type="text" value="">
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-sm-3">
-                                            <div class="row">
-                                              <div class="col-sm-5">
-                                                <label for="nroplansalud">N° plan de salud</label>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <input class="form-control" id="paciente_numeroPlanSaludCompa_ia" name="paciente.numeroPlanSaludCompañia" type="text" value="">
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-sm-3">
-
-                                          </div>
-                                          <div class="col-sm-3">
-
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div id="actconvenio" class="card-body" style="display:none;">
-                                        <div class="row pb-2">
-                                          <div class="col-sm-3">
-                                            <div class="row">
-                                              <div class="col-sm-5">
-                                                <label for="coberturacov">Cobertura</label>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <input class="form-control" id="paciente_coberturaConvenio" name="paciente.coberturaConvenio" type="text" value="">
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-sm-3">
-                                            <div class="row">
-                                              <div class="col-sm-5">
-                                                <label for="ordatencioncov">Ord. Atencion medica</label>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <input class="form-control" id="paciente_ordenAtencionMedicaConvenio" name="paciente.ordenAtencionMedicaConvenio" type="text" value="">
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-sm-3">
-                                            <div class="row">
-                                              <div class="col-sm-5">
-                                                <label for="cboparentesco3">Parentesco</label>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <select class="form-control" id="paciente_idParentesoConvenio" name="paciente.idParentesoConvenio"><option value="">Seleccione</option>
-                                                  <option value="40">PADRE</option>
-                                                  <option value="41">MADRE</option>
-                                                  <option value="42">HIJO/A</option>
-                                                  <option value="43">ABUELA/O</option>
-                                                  <option value="44">TIA/O</option>
-                                                  <option value="45">NIETA/O</option>
-                                                  <option value="46">PADRASTRO</option>
-                                                  <option value="47">MADRASTRA</option>
-                                                  <option value="48">SOBRINA/O</option>
-                                                  <option value="49">PRIMA/O</option>
-                                                  <option value="50">BIS-ABUELA/O</option>
-                                                  <option value="51">AMIGA/O</option>
-                                                  <option value="52">HERMANA/O</option>
-                                                  <option value="53">YERNO</option>
-                                                  <option value="54">NUERA</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-sm-3">
-                                            <div class="row">
-                                              <div class="col-sm-5">
-                                                <label for="fechinicov">Inicio de vig.</label>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <input class="form-control" id="paciente_inicioVigenciaConvenio" name="paciente.inicioVigenciaConvenio" type="text" value="">
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="row pb-3">
-                                          <div class="col-sm-3">
-                                            <div class="row">
-                                              <div class="col-sm-5">
-                                                <label for="fechfincov">Fin de vig.</label>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <input class="form-control" id="paciente_finVigenciaConvenio" name="paciente.finVigenciaConvenio" type="text" value="">
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-sm-3">
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-sm-12" id="headingFourth">
-                                  <a  class="collapsed" data-toggle="collapse" data-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+                                
+                                <div class="col-sm-12 accordion" id="headingFourth">
+                                  <a  class="collapsed acc-icons" data-toggle="collapse" data-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
                                     <div class="card card-primary">
                                       <div class="card-header">
                                         <div class="row">
                                           <div class="col-sm-6 card-title">
                                             <h5>Empresa</h5>
                                           </div>
-                                          <div class="col-sm-6 text-right">
-                                            <i style="font-size: 30px;" class="fas fa-plus fx-5"></i>
-                                          </div>
+                                         
                                         </div>
                                       </div>
                                     </div>
@@ -1095,17 +867,15 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-sm-12" id="headingFive">
-                                  <a class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <div class="col-sm-12 accordion" id="headingFive">
+                                  <a class="collapsed acc-icons" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                     <div class="card card-primary">
                                       <div class="card-header">
                                         <div class="row">
                                           <div class="col-sm-6 card-title">
                                             <h5>Datos del acompañante</h5>
                                           </div>
-                                          <div class="col-sm-6 text-right">
-                                            <i style="font-size: 30px;" class="fas fa-plus fx-5"></i>
-                                          </div>
+                                          
                                         </div>
                                       </div>
                                     </div>

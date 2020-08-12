@@ -13,4 +13,9 @@ $("#imageUpload").change(function() {
     readURL(this);
 });
 
+$(document).ready(function(){
+  $(".btnMedico").click(function(){
+    $(".tablaEspecialidad").toggle();
+  });
+});
 

@@ -1,0 +1,1504 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+  <title>Sistema Web | His</title>
+
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="Content/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bbootstrap 4 -->
+  <link rel="stylesheet" href="Content/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="Content/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="Content/plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="Content/dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="Content/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="Content/plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="Content/plugins/summernote/summernote-bs4.css">
+
+  <!-- buscar -->
+  <link rel="stylesheet" href="Content/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+  <link href="css/stylesformulario.css" rel="stylesheet" />
+
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <script src="lib/jquery/dist/jquery.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/sweetalert.js"></script>
+
+  <style type="text/css">
+    .user-panel img {
+      height: auto;
+      width: 3.1rem;
+    }
+  </style>
+
+  <style type="text/css">
+    .user-panel .info {
+      display: inline-block;
+      padding: 20px 5px 5px 10px;
+    }
+  </style>
+
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+  <div class="wrapper">
+
+    <!-- Navbar -->
+
+    <nav class="main-header navbar navbar-expand navbar-light" style="background-color: #f4f6f9;border-bottom:#f4f6f9">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars" style="color:#0f5493"></i></a>
+        </li>
+
+      </ul>
+
+      <!-- SEARCH FORM -->
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+
+        <!-- Messages Dropdown Menu -->
+        <!-- Notifications Dropdown Menu -->
+        <div class="">
+          <button type="button" class="btn btn-secondary dropdown-toggle hidden-sm-down" style="background: none;
+          border: none;color: #0f5493;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img style="width:24px;border-radius:50%;border:2px solid #0f5493;margin-right:9px;" src="/images/profile.png" /><span class="bold" style="color:#0f5493">Bienvenido, Rafael Sanchez</span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+          <button class="dropdown-item" type="button"><img style="margin-right: 9px;" src="images/back.png" /><span> Panel </span></button>
+          <button class="dropdown-item" type="button"><img style="margin-right: 9px;" src="images/off.png" /><span> Cerrar Sesion </span></button>
+
+        </div>
+      </div>
+
+    </ul>
+  </nav>
+
+  <!-- /.navbar -->
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <!-- Sidebar -->
+    <div class="sidebar">
+                  <!-- Sidebar user panel (optional)
+                  <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                      <div class="image">
+                          <img src="/Content/dist/img/avatar5.png" class="img-circle elevation-2" alt="User Image">
+                      </div>
+                      <div class="info">
+                          <a href="#" class="d-block">Rafael Sanchez</a>
+                      </div>
+                  </div>
+                -->
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                          <!-- Add icons to the links using the .nav-icon class
+                            with font-awesome or any other icon font library -->
+                            <li style="margin-bottom: 1rem;">
+                              <a href="index3.html" class="brand-link">
+                                <img src="Content/dist/img/cem2.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                                style="opacity: .8">
+                                <span class="brand-text font-weight-light"><font face="Kaushan Script, coursive  ">HIS</font></span>
+
+                              </a>
+                            </li>
+                            <li class="hidden-sm-up">
+                              <a href="#" class="nav-link ">
+                                <img style="width:35px;border-radius:50%;border:2px solid white;margin-right:9px;" src="images/profile.png" /><span style="font-weight: bold;
+                                color:white;"> Rafael Sanchez</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="/Persona">
+                                <i class="nav-icon fas fa-user-injured"></i>
+                                <p>
+                                  Gestionar Personal
+
+                                </p>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="/Cronograma">
+                                <i class="nav-icon fas fa-user-injured"></i>
+                                <p>
+                                  Horario de Medico
+
+                                </p>
+                              </a>
+                            </li>
+
+                            <li class="nav-item">
+                              <a class="nav-link " href="/Paciente">
+                                <i class="nav-icon fas fa-notes-medical"></i>
+                                <p>
+                                  Reserva de Citas
+
+                                </p>
+                              </a>
+                            </li>
+
+                            <li class="nav-item">
+                              <a class="nav-link " href="/Paciente/AdmicionMedico">
+                                <i class="nav-icon fas fa-notes-medical"></i>
+                                <p>
+                                  Listado de Citas
+
+                                </p>
+                              </a>
+                            </li>
+
+
+                            <li class="nav-item">
+                              <a class="nav-link " href="/Tablas">
+                                <i class="nav-icon far fa-calendar-alt"></i>
+                                <p>
+                                  Gestion de tablas
+
+                                </p>
+                              </a>
+                            </li>
+                            <li class="hidden-sm-up nav-item">
+                              <a href="#" class="nav-link ">
+                                <i class="far fa-times-circle"></i>
+                                <p>
+                                  Gestion de tablas
+
+                                </p>
+                              </a>
+                            </li>
+                            <li class="hidden-sm-up nav-item">
+                              <a href="#" class="nav-link ">
+                                <i class="far fa-times-circle"></i> <p>
+                                  Gestion de tablas
+
+                                </p>
+                              </a>
+                            </li>
+
+
+                          </ul>
+                        </nav>
+                        <!-- /.sidebar-menu -->
+                      </div>
+                      <!-- /.sidebar -->
+                    </aside>
+
+                    <!-- Content Wrapper. Contains page content -->
+                    <div class="content-wrapper">
+                     <!-- Content Header (Page header) -->
+                     <div class="content-header">
+                      <div class="card-cem container">
+                       <div class="row mb-2">
+                        <div class="col-sm-6">
+                         <h1 class="m-0 text-dark"></h1>
+                       </div><!-- /.col -->
+                       <div class="col-sm-12" style="padding: 2rem;">
+                         <div class="layout-content">
+                          <div class="layout-content-body">
+                           <div class="container">
+                            <div class="row">
+                             <div class="col-sm-12 ">
+                              <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                  <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Admision Ambulatoria</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Datos Paciente</a>
+                                </li>
+                              </ul><!-- Tab panes -->
+                              <div class="tab-content">
+                                <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                  <div class="col-sm-12">
+                                   <div class="row">
+                                    <div class="col-sm-12">
+                                      <div class="row pb-2 text-left">
+                                        <div class="col-sm-12">
+                                          <a style="font-weight:bold; color:white;" class="btn btn-primary mt-4 pt-1" id="Crear" href="/Caja">
+                                            <i class="far fa-credit-card"></i>
+                                            CAJA
+                                          </a>
+                                          <button style="font-weight:bold;" class="btn btn-primary mt-4 pt-1 ml-1" id="Crear"> <i class="far fa-clock"></i> CITA</button>
+                                          <a style="font-weight:bold; color:white;" onclick="OpenModalOrdenes();" class="btn btn-primary mt-4 pt-1 ml-1" id="Crear"><i class="fas fa-flask"></i> LAB</a>
+                                          <button style="font-weight:bold;" class="btn btn-primary mt-4 pt-1 ml-1" id="Crear"><i class="far fa-image"></i> IMA</button>
+                                          <button style="font-weight:bold;" class="btn btn-primary mt-4 pt- ml-1" id="Crear"><i class="fas fa-clinic-medical"></i> INTER</button>
+                                        </div>
+
+                                      </div>
+                                      <form action="/Cita/RegistroCita" method="post">        <div class="row pb-2">
+                                        <div class="col-sm-3">
+                                          <div class="row">
+                                            <div class="col-sm-12">
+                                              <div class="input-style">
+                                                <label class="form-label">Medico</label>
+                                                <input type="hidden" name="idmedico" id="idmedicocro">
+                                                <input type="text" class="form-control" id="medico">
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="idMedico" data-valmsg-replace="true"></span>
+                                              </div>
+                                            </div>
+                                            
+                                          </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                          <div class="row">
+                                            <div class="col-sm-12">
+                                              <div class="input-style">
+                                                <label class="form-label">Especialidad</label>
+                                                <select class="form-control" id="idespecialidad" name="idespecialidad"><option value="">Seleccionar</option>
+                                                  <option value="125">ALERGIA E INMUNOLOGIA</option>
+                                                  <option value="126">CARDIOLOGIA</option>
+                                                  <option value="127">CIRUGIA ONCOLOGICA DE CABEZA Y CUELLO</option>
+                                                  <option value="128">CIRUGIA DE TORAX Y CARDIOVASCULAR</option>
+                                                  <option value="129">CIRUGIA GENERAL Y LAPAROSCOPICA</option>
+                                                  <option value="130">CIRUGIA GENERAL Y ONCOLOGICA</option>
+                                                  <option value="131">DERMATOLOGIA</option>
+                                                  <option value="132">RADIOLOGIA</option>
+                                                  <option value="133">ENDOCRINOLOGIA</option>
+                                                  <option value="134">ENFERMERIA</option>
+                                                  <option value="135">GASTROENTEROLOGIA</option>
+                                                  <option value="136">GERIATRIA</option>
+                                                  <option value="137">GINECOLOGIA Y OBSTETRICIA</option>
+                                                  <option value="138">GINECOLOGIA ONCOLOGICA</option>
+                                                  <option value="139">HEMATOLOGIA</option>
+                                                  <option value="140">MASTOLOGIA </option>
+                                                  <option value="141">MEDICINA FISICA Y REHABILITACION</option>
+                                                  <option value="142">MEDICINA GENERAL</option>
+                                                  <option value="143">MEDICINA INTERNA</option>
+                                                  <option value="144">NEFROLOGIA</option>
+                                                  <option value="145">NEUMOLOGIA</option>
+                                                  <option value="146">NEUROCIRUGIA</option>
+                                                  <option value="147">NEUROLOGIA</option>
+                                                  <option value="148">NUTRICION Y DIETETICA</option>
+                                                  <option value="149">ODONTOLOGIA INTEGRAL</option>
+                                                </select>
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="idEspecialidad" data-valmsg-replace="true"></span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-sm-2 text-right">
+                                          <div class="input-style">
+                                            <a onclick="FiltroCronogramaMedEsp();" style="padding-top: 5px;" class="form-control btn btn-primary text-white btnMedico"><i class="fa fa-search" aria-hidden="true"></i> Buscar por especialidad</a>
+                                          </div>
+
+                                        </div>
+                                        <div class="col-sm-4">
+                                          <div class="row">
+                                            <div class="col-sm-4">
+                                              <div class="input-style">
+                                                <label class="form-label">Fecha </label>
+                                                <input class="form-control" id="fechaIni" name="fecha" type="Date">
+                                                <span class="field-validation-valid text-danger" data-valmsg-for="fechaIni" data-valmsg-replace="true"></span>
+
+                                              </div>
+
+                                            </div>
+                                            <div class="col-sm-4" style="">
+                                              <div class="input-style">
+                                                <button type="submit" class="btn btn-primary btn-buscar form-control" style=""><i class="fa fa-search pr-1" aria-hidden="true"></i>Buscar Horario</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+                                      </div>
+                                      <input name="__RequestVerificationToken" type="hidden" value="CfDJ8EZArBrd5jZLg1_sLSb7wTB_nHL8_4kgjRsmMayNN7I1VO1lLWLSz5N84yqN_iv7bt3mOFMbzzWJZyAf-25Ge4lY2soTBAr4R_iOGBGswitfTyk37myFpUuRz1sbbN3tlTFCVN1MJ18eChcWvLNp2asdte_-Ond7bDjjlVv85InEEey7EaCOjC_13VhvuQSDOQ"></form>
+
+                                      <div class="col-sm-12 tablaEspecialidad" style="display:none">
+                                        <p class="font-weight-bold">Selecione un Medico</p>
+                                        <table class="table table-striped">
+                                          <thead>
+                                            <tr>
+                                              <th scope="col">N°</th>
+                                              <th scope="col">Nombre Medico</th>
+                                              <th scope="col">Especialidad</th>
+                                              <th scope="col">Opciones</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <th scope="row">1</th>
+                                              <td>Mark</td>
+                                              <td>Alergia e Inmunologia</td>
+                                              <td>
+                                                <div class="">
+                                                <button type="submit" class="btn btn-primary btn-buscar " style="font-size:14px">Seleccionar</button>
+                                              </div>
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">2</th>
+                                              <td>Jacob</td>
+                                              <td>Alergia e Inmunologia</td>
+                                              <td>
+                                                <div class="">
+                                                  <button type="submit" class="btn btn-primary btn-buscar " style="font-size:14px">Seleccionar</button>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">3</th>
+                                              <td>Larry</td>
+                                              <td>Alergia e Inmunologia</td>
+                                              <td>
+                                                <div class="">
+                                                <button type="submit" class="btn btn-primary btn-buscar " style="font-size:14px">Seleccionar</button>
+                                              </div>
+                                            </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+
+                                      <div class="row pt-3">
+                                        <div class="col-sm-12">
+                                          <p class="font-weight-bold">Horario de Medico</p>
+                                          <table class="table table-striped table-bordered" style="width:100%" id="cronogramagrid">
+                                  <thead>
+                                    <tr>
+                                      <th>N°</th>
+                                      <th>Hora</th>
+                                      <th>Historia</th>
+                                      <th>Paciente</th>
+                                      <th>Confirmado</th>
+                                      <th>Hora <br> Registro</th>
+                                      <th>N° <br>cuenta</th>
+                                      <th>N° Orden</th>
+                                      <th>Consultorio</th>
+                                      <th>Tipo Afiliado</th>
+                                      <th>Acciones</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>08:00:00</td>
+                                      <td>2345678</td>
+                                      <td>Rosa Herrera Cervantes</td>
+                                      <td>PENDIENTE</td>
+                                      <td>3:00</td>
+                                      <td>15421</td>
+                                      <td>0061</td>
+                                      <td>C-01</td>
+                                      <td>NO DEFINIDO</td>
+                                      <td>
+                                        <button type="submit" class="edit btn btn-primary mb-2"><i class="fas fa-plus"></i></button>
+                                        <button type="submit" class="delete btn btn-danger mb-2"><i class="fas fa-minus"></i></button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>2</td>
+                                      <td>08:00:00</td>
+                                      <td>2345678</td>
+                                      <td>Rosa Herrera Cervantes</td>
+                                      <td>PENDIENTE</td>
+                                      <td>3:00</td>
+                                      <td>15421</td>
+                                      <td>0061</td>
+                                      <td>C-01</td>
+                                      <td>NO DEFINIDO</td>
+                                      <td>
+                                        <button type="submit" class="edit btn btn-primary mb-2"><i class="fas fa-plus"></i></button>
+                                        <button type="submit" class="delete btn btn-danger mb-2"><i class="fas fa-minus"></i></button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>3</td>
+                                      <td>08:00:00</td>
+                                      <td>2345678</td>
+                                      <td>Rosa Herrera Cervantes</td>
+                                      <td>PENDIENTE</td>
+                                      <td>3:00</td>
+                                      <td>15421</td>
+                                      <td>0061</td>
+                                      <td>C-01</td>
+                                      <td>NO DEFINIDO</td>
+                                      <td>
+                                        <button type="submit" class="edit btn btn-primary mb-2"><i class="fas fa-plus"></i></button>
+                                        <button type="submit" class="delete btn btn-danger mb-2"><i class="fas fa-minus"></i></button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>4</td>
+                                      <td>08:00:00</td>
+                                      <td>2345678</td>
+                                      <td>Rosa Herrera Cervantes</td>
+                                      <td>PENDIENTE</td>
+                                      <td>3:00</td>
+                                      <td>15421</td>
+                                      <td>0061</td>
+                                      <td>C-01</td>
+                                      <td>NO DEFINIDO</td>
+                                      <td>
+                                        <button type="submit" class="edit btn btn-primary mb-2"><i class="fas fa-plus"></i></button>
+                                        <button type="submit" class="delete btn btn-danger mb-2"><i class="fas fa-minus"></i></button>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                <div class="col-sm-12 pt-3 pb-2 " style="border-bottom: 1px solid rgba(128, 128, 128, 0.34901960784313724);margin-bottom: 0.8rem;">
+                                  <div class="row">
+                                    <div class="col-sm-2"><p>Buscar Paciente</p></div>
+                                    <div class="col-sm-2">
+                                      <select class="form-control  small-input">
+                                        <option value="value">DNI</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-sm-2">
+                                      <input type="text" id="dnipe" name="dni" class="form-control small-input" />
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                      <button class="btn btn-info btn-icon-small" type="submit" id="btnBuscar"><i class="fas fa-search"></i></button>
+                                      <a class="btn btn-primary btn-icon-small" type="submit" ><i class="fas fa-user-plus"></i></a>
+                                      <a class="btn btn-secondary btn-icon-small" type="submit" ><i class="fas fa-edit"></i></a>
+                                    </div>
+
+                                  </div>
+                                </div>
+                                <div class="content">
+                                  <div class="row">
+                                    <div class="col-sm-12 col-md-2">
+                                     <div class="avatar-upload">
+                                      <div class="avatar-edit">
+                                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                        <label for="imageUpload"><i class="fas fa-pencil-alt"></i></label>
+                                      </div>
+                                      <div class="avatar-preview">
+                                        <div id="imagePreview" style="background-image: url(images/profile.png);">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="">
+                                      <ul style="text-decoration: none;list-style: none;padding-left:8%;margin-top:1rem">
+                                        <li><h6 style="font-weight: bold;">Admision</h6></li>
+                                        <li><p>Fecha:</p></li>
+                                        <li><p>Hora:</p></li>
+                                        <li><p>Admi:</p></li>
+                                        <li><p>Triado:</p></li>
+
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-12 col-md-10 tabs-border">
+                                    <ul class="nav nav-tabs border-0" role="tablist">
+                                      <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#tabs-uno" role="tab">
+                                          Datos del Paciente
+                                        </a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-dos" role="tab">Atención Medica</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-tres" role="tab">Cobertura Paciente</a>
+                                      </li>
+                                    </ul><!-- Tab panes -->
+                                    <div class="tab-content">
+                                      <div class="tab-pane active" id="tabs-uno" role="tabpanel">
+                                       <div class="col-sm-12 p-3 scroll-content">
+                                        <div class="row">
+
+                                          <div class="col-sm-12">
+                                            <div class="" >
+                                              <div class="row">
+                                                <div class="col-sm-12 mb-2"><h5>Datos del Paciente</h5></div>
+                                                <div class="col-sm-12">
+                                                  <div class="row mb-3">
+                                                    <div class="col-md-1 col-sm-12"><label>Dni*</label></div>
+                                                    <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                    <div class="col-md-2 col-sm-12"><label>Tipo de Doc*</label></div>
+                                                    <div class="col-md-2 col-sm-12 inputInline"> 
+                                                      <select class="form-control" data-val="true" data-val-required="Seleccione el tipo de documento" id="idTipoDocumento" name="idTipoDocumento"><option value="">Seleccione</option>
+                                                        <option value="1">LIBRETA ELECTORAL O DNI</option>
+                                                        <option value="2">CARNET DE EXTRANJERIA</option>
+                                                        <option value="3">REGISTRO UNICO CONTRIBUYENTES</option>
+                                                        <option value="4">PASAPORTE</option>
+                                                        <option value="5">PARTIDA NACIMIENTO -IDENTIDAD</option>
+                                                        <option value="6">OTROS</option>
+                                                      </select>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-12"><label>Tipo de Paciente*</label></div>
+                                                    <div class="col-md-2 col-sm-12 inputInline">
+                                                      <select class="form-control" data-val="true" data-val-required="Seleccione el tipo de paciente" id="cbotppac" name="paciente.idTipoPaciente"><option value="">Seleccione</option>
+                                                        <option value="119">PARTICULAR</option>
+                                                        <option value="120">ASEGURADO</option>
+                                                        <option value="121">CONVENIO</option>
+                                                        <option value="122">SOAT</option>
+                                                        <option value="123">EXTERNO</option>
+                                                        <option value="124">EXTERNO</option>
+                                                      </select>
+                                                    </div>
+                                                  </div>
+                                                  <div class="row mb-3">
+                                                    <div class="col-md-1 col-sm-12"><label>Nombre*</label></div>
+                                                    <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                    <div class="col-md-2 col-sm-12"><label>Apellido Paterno*</label></div>
+                                                    <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                    <div class="col-md-2 col-sm-12"><label>Apellido Materno*</label></div>
+                                                    <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                  </div>
+
+                                                  <div class="row mb-3">
+                                                    <div class="col-md-1 col-sm-12"><label>Fecha*</label></div>
+                                                    <div class="col-md-2 col-sm-12 inputInline"> <input class="form-control" data-val="true" data-val-required="Seleccione la fecha de inicio" id="fechaIni" name="fechaIni" type="Date" value="">
+                                                      <span class="field-validation-valid text-danger" data-valmsg-for="fechaIni" data-valmsg-replace="true"></span>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-12"><label>Edad*</label></div>
+                                                    <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                    <div class="col-md-1 col-sm-12"><label>Sexo*</label></div>
+                                                    <div class="col-md-4 col-sm-12">
+                                                      <div class="form-check d-inline ">
+                                                       <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                       <label class="form-check-label" for="exampleRadios1">
+                                                        Femenino
+                                                      </label>
+                                                    </div>
+                                                    <div class="form-check d-inline ">
+                                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                      <label class="form-check-label" for="exampleRadios2">
+                                                        Masculino
+                                                      </label>
+                                                    </div>
+
+                                                  </div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                  <div class="col-md-1 col-sm-12"><label>Ocupación</label></div>
+                                                  <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                  <div class="col-md-2 col-sm-12"><label>Grado de Instruccion</label></div>
+                                                  <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                  <div class="col-md-2 col-sm-12"><label>Estado Civil</label></div>
+                                                  <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                  <div class="col-md-1 col-sm-12"><label>Email*</label></div>
+                                                  <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                  <div class="col-md-2 col-sm-12"><label>Celular*</label></div>
+                                                  <div class="col-md-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                  <div class="col-md-2 col-sm-12"><label>Parentesco*</label></div>
+                                                  <div class="col-md-2 col-sm-12 inputInline"> <select class="form-control" data-val="true" data-val-required="Seleccione el parentesco" id="paciente_idParentescoPaciente" name="paciente.idParentescoPaciente"><option value="">Seleccione</option>
+                                                    <option value="40">PADRE</option>
+                                                    <option value="41">MADRE</option>
+                                                    <option value="42">HIJO/A</option>
+                                                    <option value="43">ABUELA/O</option>
+                                                    <option value="44">TIA/O</option>
+                                                    <option value="45">NIETA/O</option>
+                                                    <option value="46">PADRASTRO</option>
+                                                    <option value="47">MADRASTRA</option>
+                                                    <option value="48">SOBRINA/O</option>
+                                                    <option value="49">PRIMA/O</option>
+                                                    <option value="50">BIS-ABUELA/O</option>
+                                                    <option value="51">AMIGA/O</option>
+                                                    <option value="52">HERMANA/O</option>
+                                                    <option value="53">YERNO</option>
+                                                    <option value="54">NUERA</option>
+                                                  </select></div>
+                                                </div>
+                                                <div class="row mb-3">
+
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane" id="tabs-dos" role="tabpanel">
+                                    <div class="col-sm-12 p-3 scroll-content">
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <div class="" >
+                                            <div class="row">
+                                              <div class="col-sm-6">
+                                                <div class="">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 mb-2"><p>Datos del titular</p></div>
+                                                    <div class="col-sm-12">
+                                                      <div class="row mb-2">
+                                                        <div class="col-md-2 col-sm-12"><label>Tipo Doc</label></div>
+                                                        <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                        <div class="col-md-2 col-sm-12"><label>N Doc</label></div>
+                                                        <div class="col-md-3 col-sm-12 inputInline"> 
+                                                         <input type="text" name="name" class="form-control">
+                                                       </div>
+                                                       
+                                                       
+                                                     </div>
+                                                     <div class="row mb-2">
+                                                      <div class="col-md-2 col-sm-12"><label>Nombre</label></div>
+                                                      <div class="col-md-8 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                      <div class="col-md-2 col-sm-12"><label>Fecha Nac</label></div>
+                                                      <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                      <div class="col-md-2 col-sm-12"><label>Sexo</label></div>
+                                                      <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                    </div>
+
+                                                    <div class="row mb-2">
+                                                     <div class="col-md-2 col-sm-12"><label>Telef</label></div>
+                                                     <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                     <div class="col-md-2 col-sm-12"><label>Parentesco</label></div>
+                                                     <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                     
+
+                                                   </div>
+
+                                                   
+                                                   <div class="row mb-2">
+
+                                                   </div>
+                                                 </div>
+                                                 <div class="col-sm-12 mb-2">
+                                                  <p>Datos del acompañante</p>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                  <div class="row mb-2">
+                                                    <div class="col-md-2 col-sm-12"><label>Tipo Doc</label></div>
+                                                    <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                    <div class="col-md-2 col-sm-12"><label>N Doc</label></div>
+                                                    <div class="col-md-3 col-sm-12 inputInline"> 
+                                                     <input type="text" name="name" class="form-control">
+                                                   </div>
+                                                   
+                                                   
+                                                 </div>
+                                                 <div class="row mb-2">
+                                                  <div class="col-md-2 col-sm-12"><label>Nombres</label></div>
+                                                  <div class="col-md-8 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+
+                                                </div>
+                                                <div class="row mb-2">
+                                                  <div class="col-md-2 col-sm-12"><label>Telefono</label></div>
+                                                  <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                  <div class="col-md-2 col-sm-12"><label>Parentesco</label></div>
+                                                  <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                  
+                                                  
+                                                </div>
+                                                <div class="row mb-2">
+
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                          <div class="">
+                                            <div class="row">
+                                              <div class="col-sm-12 mb-2"><p>Medico Tratante</p></div>
+                                              <div class="col-sm-12">
+                                                <div class="row mb-2">
+                                                  <div class="col-md-3 col-sm-12"><label>Servicios</label></div>
+                                                  <div class="col-md-8 col-sm-12 inputInline mb-2"> <input type="text" name="name" class="form-control"></div>
+                                                  <div class="col-md-3 col-sm-12"><label>Espec.</label></div>
+                                                  <div class="col-md-8 col-sm-12 inputInline"> 
+                                                   <input type="text" name="name" class="form-control">
+                                                 </div>
+
+                                               </div>
+                                               <div class="row mb-2">
+                                                <div class="col-md-3 col-sm-12"><label>Medico</label></div>
+                                                <div class="col-md-8 mb-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                
+                                                
+                                              </div>
+
+                                              
+                                              
+                                              
+                                              
+
+                                            </div>
+                                            <div class="col-sm-12">
+                                              <p>N de HC y cuenta</p>
+                                            </div>
+                                            <div class="col-sm-12">
+                                              <div class="row mb-2">
+                                                <div class="col-md-3 col-sm-12"><label>Concurrente</label></div>
+                                                <div class="col-md-8 col-sm-12 inputInline mb-2"> <input type="text" name="name" class="form-control"></div>
+                                                <div class="col-md-3 col-sm-12"><label>N HCE</label></div>
+                                                <div class="col-md-3 col-sm-12 inputInline mb-2"> <input type="text" name="name" class="form-control"></div>
+                                                <div class="col-md-2 col-sm-12"><label>HC Ant</label></div>
+                                                <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                
+                                              </div>
+                                              <div class="row mb-2">
+                                                <div class="col-md-3 col-sm-12"><label>Cuenta</label></div>
+                                                <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                                
+                                                
+                                              </div>
+                                            </div>
+
+                                            
+                                            <div class="row mb-2">
+
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-12">
+                                  <table id="example" class="table table-striped table-bordered" style="width:100%">
+                                   <thead>
+                                    <tr>
+                                      <th>Name</th>
+                                      <th>Position</th>
+                                      <th>Office</th>
+                                      <th>Age</th>
+                                      <th>Start date</th>
+                                      <th>Salary</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Tiger Nixon</td>
+                                      <td>System Architect</td>
+                                      <td>Edinburgh</td>
+                                      <td>61</td>
+                                      <td>2011/04/25</td>
+                                      <td>$320,800</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Garrett Winters</td>
+                                      <td>Accountant</td>
+                                      <td>Tokyo</td>
+                                      <td>63</td>
+                                      <td>2011/07/25</td>
+                                      <td>$170,750</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Ashton Cox</td>
+                                      <td>Junior Technical Author</td>
+                                      <td>San Francisco</td>
+                                      <td>66</td>
+                                      <td>2009/01/12</td>
+                                      <td>$86,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Cedric Kelly</td>
+                                      <td>Senior Javascript Developer</td>
+                                      <td>Edinburgh</td>
+                                      <td>22</td>
+                                      <td>2012/03/29</td>
+                                      <td>$433,060</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Airi Satou</td>
+                                      <td>Accountant</td>
+                                      <td>Tokyo</td>
+                                      <td>33</td>
+                                      <td>2008/11/28</td>
+                                      <td>$162,700</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Brielle Williamson</td>
+                                      <td>Integration Specialist</td>
+                                      <td>New York</td>
+                                      <td>61</td>
+                                      <td>2012/12/02</td>
+                                      <td>$372,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Herrod Chandler</td>
+                                      <td>Sales Assistant</td>
+                                      <td>San Francisco</td>
+                                      <td>59</td>
+                                      <td>2012/08/06</td>
+                                      <td>$137,500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Rhona Davidson</td>
+                                      <td>Integration Specialist</td>
+                                      <td>Tokyo</td>
+                                      <td>55</td>
+                                      <td>2010/10/14</td>
+                                      <td>$327,900</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Colleen Hurst</td>
+                                      <td>Javascript Developer</td>
+                                      <td>San Francisco</td>
+                                      <td>39</td>
+                                      <td>2009/09/15</td>
+                                      <td>$205,500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Sonya Frost</td>
+                                      <td>Software Engineer</td>
+                                      <td>Edinburgh</td>
+                                      <td>23</td>
+                                      <td>2008/12/13</td>
+                                      <td>$103,600</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Jena Gaines</td>
+                                      <td>Office Manager</td>
+                                      <td>London</td>
+                                      <td>30</td>
+                                      <td>2008/12/19</td>
+                                      <td>$90,560</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Quinn Flynn</td>
+                                      <td>Support Lead</td>
+                                      <td>Edinburgh</td>
+                                      <td>22</td>
+                                      <td>2013/03/03</td>
+                                      <td>$342,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Charde Marshall</td>
+                                      <td>Regional Director</td>
+                                      <td>San Francisco</td>
+                                      <td>36</td>
+                                      <td>2008/10/16</td>
+                                      <td>$470,600</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Haley Kennedy</td>
+                                      <td>Senior Marketing Designer</td>
+                                      <td>London</td>
+                                      <td>43</td>
+                                      <td>2012/12/18</td>
+                                      <td>$313,500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Tatyana Fitzpatrick</td>
+                                      <td>Regional Director</td>
+                                      <td>London</td>
+                                      <td>19</td>
+                                      <td>2010/03/17</td>
+                                      <td>$385,750</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Michael Silva</td>
+                                      <td>Marketing Designer</td>
+                                      <td>London</td>
+                                      <td>66</td>
+                                      <td>2012/11/27</td>
+                                      <td>$198,500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Paul Byrd</td>
+                                      <td>Chief Financial Officer (CFO)</td>
+                                      <td>New York</td>
+                                      <td>64</td>
+                                      <td>2010/06/09</td>
+                                      <td>$725,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Gloria Little</td>
+                                      <td>Systems Administrator</td>
+                                      <td>New York</td>
+                                      <td>59</td>
+                                      <td>2009/04/10</td>
+                                      <td>$237,500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Bradley Greer</td>
+                                      <td>Software Engineer</td>
+                                      <td>London</td>
+                                      <td>41</td>
+                                      <td>2012/10/13</td>
+                                      <td>$132,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Dai Rios</td>
+                                      <td>Personnel Lead</td>
+                                      <td>Edinburgh</td>
+                                      <td>35</td>
+                                      <td>2012/09/26</td>
+                                      <td>$217,500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Jenette Caldwell</td>
+                                      <td>Development Lead</td>
+                                      <td>New York</td>
+                                      <td>30</td>
+                                      <td>2011/09/03</td>
+                                      <td>$345,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Yuri Berry</td>
+                                      <td>Chief Marketing Officer (CMO)</td>
+                                      <td>New York</td>
+                                      <td>40</td>
+                                      <td>2009/06/25</td>
+                                      <td>$675,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Caesar Vance</td>
+                                      <td>Pre-Sales Support</td>
+                                      <td>New York</td>
+                                      <td>21</td>
+                                      <td>2011/12/12</td>
+                                      <td>$106,450</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Doris Wilder</td>
+                                      <td>Sales Assistant</td>
+                                      <td>Sydney</td>
+                                      <td>23</td>
+                                      <td>2010/09/20</td>
+                                      <td>$85,600</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Angelica Ramos</td>
+                                      <td>Chief Executive Officer (CEO)</td>
+                                      <td>London</td>
+                                      <td>47</td>
+                                      <td>2009/10/09</td>
+                                      <td>$1,200,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Gavin Joyce</td>
+                                      <td>Developer</td>
+                                      <td>Edinburgh</td>
+                                      <td>42</td>
+                                      <td>2010/12/22</td>
+                                      <td>$92,575</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Jennifer Chang</td>
+                                      <td>Regional Director</td>
+                                      <td>Singapore</td>
+                                      <td>28</td>
+                                      <td>2010/11/14</td>
+                                      <td>$357,650</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Brenden Wagner</td>
+                                      <td>Software Engineer</td>
+                                      <td>San Francisco</td>
+                                      <td>28</td>
+                                      <td>2011/06/07</td>
+                                      <td>$206,850</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Fiona Green</td>
+                                      <td>Chief Operating Officer (COO)</td>
+                                      <td>San Francisco</td>
+                                      <td>48</td>
+                                      <td>2010/03/11</td>
+                                      <td>$850,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Shou Itou</td>
+                                      <td>Regional Marketing</td>
+                                      <td>Tokyo</td>
+                                      <td>20</td>
+                                      <td>2011/08/14</td>
+                                      <td>$163,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Michelle House</td>
+                                      <td>Integration Specialist</td>
+                                      <td>Sydney</td>
+                                      <td>37</td>
+                                      <td>2011/06/02</td>
+                                      <td>$95,400</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Suki Burks</td>
+                                      <td>Developer</td>
+                                      <td>London</td>
+                                      <td>53</td>
+                                      <td>2009/10/22</td>
+                                      <td>$114,500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Prescott Bartlett</td>
+                                      <td>Technical Author</td>
+                                      <td>London</td>
+                                      <td>27</td>
+                                      <td>2011/05/07</td>
+                                      <td>$145,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Gavin Cortez</td>
+                                      <td>Team Leader</td>
+                                      <td>San Francisco</td>
+                                      <td>22</td>
+                                      <td>2008/10/26</td>
+                                      <td>$235,500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Martena Mccray</td>
+                                      <td>Post-Sales support</td>
+                                      <td>Edinburgh</td>
+                                      <td>46</td>
+                                      <td>2011/03/09</td>
+                                      <td>$324,050</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Unity Butler</td>
+                                      <td>Marketing Designer</td>
+                                      <td>San Francisco</td>
+                                      <td>47</td>
+                                      <td>2009/12/09</td>
+                                      <td>$85,675</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Howard Hatfield</td>
+                                      <td>Office Manager</td>
+                                      <td>San Francisco</td>
+                                      <td>51</td>
+                                      <td>2008/12/16</td>
+                                      <td>$164,500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Hope Fuentes</td>
+                                      <td>Secretary</td>
+                                      <td>San Francisco</td>
+                                      <td>41</td>
+                                      <td>2010/02/12</td>
+                                      <td>$109,850</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Vivian Harrell</td>
+                                      <td>Financial Controller</td>
+                                      <td>San Francisco</td>
+                                      <td>62</td>
+                                      <td>2009/02/14</td>
+                                      <td>$452,500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Timothy Mooney</td>
+                                      <td>Office Manager</td>
+                                      <td>London</td>
+                                      <td>37</td>
+                                      <td>2008/12/11</td>
+                                      <td>$136,200</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Jackson Bradshaw</td>
+                                      <td>Director</td>
+                                      <td>New York</td>
+                                      <td>65</td>
+                                      <td>2008/09/26</td>
+                                      <td>$645,750</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Olivia Liang</td>
+                                      <td>Support Engineer</td>
+                                      <td>Singapore</td>
+                                      <td>64</td>
+                                      <td>2011/02/03</td>
+                                      <td>$234,500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Bruno Nash</td>
+                                      <td>Software Engineer</td>
+                                      <td>London</td>
+                                      <td>38</td>
+                                      <td>2011/05/03</td>
+                                      <td>$163,500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Sakura Yamamoto</td>
+                                      <td>Support Engineer</td>
+                                      <td>Tokyo</td>
+                                      <td>37</td>
+                                      <td>2009/08/19</td>
+                                      <td>$139,575</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Thor Walton</td>
+                                      <td>Developer</td>
+                                      <td>New York</td>
+                                      <td>61</td>
+                                      <td>2013/08/11</td>
+                                      <td>$98,540</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Finn Camacho</td>
+                                      <td>Support Engineer</td>
+                                      <td>San Francisco</td>
+                                      <td>47</td>
+                                      <td>2009/07/07</td>
+                                      <td>$87,500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Serge Baldwin</td>
+                                      <td>Data Coordinator</td>
+                                      <td>Singapore</td>
+                                      <td>64</td>
+                                      <td>2012/04/09</td>
+                                      <td>$138,575</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Zenaida Frank</td>
+                                      <td>Software Engineer</td>
+                                      <td>New York</td>
+                                      <td>63</td>
+                                      <td>2010/01/04</td>
+                                      <td>$125,250</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Zorita Serrano</td>
+                                      <td>Software Engineer</td>
+                                      <td>San Francisco</td>
+                                      <td>56</td>
+                                      <td>2012/06/01</td>
+                                      <td>$115,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Jennifer Acosta</td>
+                                      <td>Junior Javascript Developer</td>
+                                      <td>Edinburgh</td>
+                                      <td>43</td>
+                                      <td>2013/02/01</td>
+                                      <td>$75,650</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Cara Stevens</td>
+                                      <td>Sales Assistant</td>
+                                      <td>New York</td>
+                                      <td>46</td>
+                                      <td>2011/12/06</td>
+                                      <td>$145,600</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Hermione Butler</td>
+                                      <td>Regional Director</td>
+                                      <td>London</td>
+                                      <td>47</td>
+                                      <td>2011/03/21</td>
+                                      <td>$356,250</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Lael Greer</td>
+                                      <td>Systems Administrator</td>
+                                      <td>London</td>
+                                      <td>21</td>
+                                      <td>2009/02/27</td>
+                                      <td>$103,500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Jonas Alexander</td>
+                                      <td>Developer</td>
+                                      <td>San Francisco</td>
+                                      <td>30</td>
+                                      <td>2010/07/14</td>
+                                      <td>$86,500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Shad Decker</td>
+                                      <td>Regional Director</td>
+                                      <td>Edinburgh</td>
+                                      <td>51</td>
+                                      <td>2008/11/13</td>
+                                      <td>$183,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Michael Bruce</td>
+                                      <td>Javascript Developer</td>
+                                      <td>Singapore</td>
+                                      <td>29</td>
+                                      <td>2011/06/27</td>
+                                      <td>$183,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Donna Snider</td>
+                                      <td>Customer Support</td>
+                                      <td>New York</td>
+                                      <td>27</td>
+                                      <td>2011/01/25</td>
+                                      <td>$112,000</td>
+                                    </tr>
+                                  </tbody>
+                                  <tfoot>
+                                    <tr>
+                                      <th>Name</th>
+                                      <th>Position</th>
+                                      <th>Office</th>
+                                      <th>Age</th>
+                                      <th>Start date</th>
+                                      <th>Salary</th>
+                                    </tr>
+                                  </tfoot>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane" id="tabs-tres" role="tabpanel">
+                          <div class="col-sm-12 p-3 scroll-content">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <div class="">
+                                  <div class="row">
+                                    <div class="col-sm-12 mb-2"><p>Cobertura de servicios</p></div>
+                                    <div class="col-sm-12">
+                                      <div class="row mb-2">
+                                        <div class="col-md-2 col-sm-12"><label>SITEDS</label></div>
+                                        <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                        <div class="col-md-2 col-sm-12"><label>Estado Seguro</label></div>
+                                        <div class="col-md-3 col-sm-12 inputInline"> 
+                                         <input type="text" name="name" class="form-control">
+                                       </div>
+                                       
+                                       
+                                     </div>
+                                     <div class="row mb-2">
+                                      <div class="col-md-2 col-sm-12"><label>Cod. Asegurado</label></div>
+                                      <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                      <div class="col-md-2 col-sm-12"><label>Fecha vigencia</label></div>
+                                      <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                    </div>
+
+                                    <div class="row mb-2">
+                                     <div class="col-md-2 col-sm-12"><label>N de Placa</label></div>
+                                     <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                     <div class="col-md-2 col-sm-12"><label>Poliza</label></div>
+                                     <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                     
+
+                                   </div>
+
+                                   <div class="row mb-2">
+                                    <div class="col-md-2 col-sm-12"><label>Beneficio</label></div>
+                                    <div class="col-md-8 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+
+                                  </div>
+                                  <div class="row mb-2">
+                                    <div class="col-md-2 col-sm-12"><label>Parentesco</label></div>
+                                    <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                    <div class="col-md-2 col-sm-12"><label>% Cob</label></div>
+                                    <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                    
+                                    
+                                  </div>
+                                  <div class="row mb-2">
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-12 mb-2">
+                                  <p>Comunicacion Seguro / Empresa</p>
+                                </div>
+                                <div class="col-sm-12">
+                                 <div class="row mb-2">
+                                  <div class="col-md-2 col-sm-12"><label>Ejecutivo</label></div>
+                                  <div class="col-md-8 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+
+                                </div>
+                                <div class="row mb-2">
+                                  <div class="col-md-2 col-sm-12"><label>Telefono</label></div>
+                                  <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                  <div class="col-md-2 col-sm-12"><label>Cod. Llam</label></div>
+                                  <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                  
+                                  
+                                </div>
+                                <div class="row mb-2">
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="">
+                            <div class="row">
+                              <div class="col-sm-12 mb-2"><p>Plan de paciente</p></div>
+                              <div class="col-sm-12">
+                                <div class="row mb-2">
+                                  <div class="col-md-2 col-sm-12"><label>Tipo paciente</label></div>
+                                  <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                  <div class="col-md-2 col-sm-12"><label>Mc. Pago</label></div>
+                                  <div class="col-md-4 col-sm-12 inputInline"> 
+                                   <input type="text" name="name" class="form-control">
+                                 </div>
+
+                               </div>
+                               <div class="row mb-2">
+                                <div class="col-md-2 col-sm-12"><label>Aseguradora</label></div>
+                                <div class="col-md-9 mb-2 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                <div class="col-md-2 col-sm-12"><label>Contratante</label></div>
+                                <div class="col-md-9 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                
+                              </div>
+
+                              <div class="row mb-2">
+                                <div class="col-md-2 col-sm-12"><label>Deducible</label></div>
+                                <div class="col-md-3 col-sm-12 inputInline">
+                                  <input type="text" name="name" class="form-control">
+                                </div>
+                                <div class="col-md-2 col-sm-12"><label>Coaseguro</label></div>
+                                <div class="col-md-4 col-sm-12 inputInline">
+                                  <input type="text" name="name" class="form-control">
+                                </div>
+                              </div>
+                              
+                              
+                              
+
+                            </div>
+                            <div class="col-sm-12">
+                              <p>Documentos</p>
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="row mb-2">
+                                <div class="col-md-2 col-sm-12"><label>Tipo docu</label></div>
+                                <div class="col-md-3 col-sm-12 inputInline mb-2"> <input type="text" name="name" class="form-control"></div>
+                                <div class="col-md-2 col-sm-12"><label>N docu</label></div>
+                                <div class="col-md-4 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                <div class="col-md-2 col-sm-12"><label>Ejecutivo</label></div>
+                                <div class="col-md-9 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                              </div>
+                              <div class="row mb-2">
+                                <div class="col-md-2 col-sm-12"><label>Monto</label></div>
+                                <div class="col-md-3 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                <div class="col-md-2 col-sm-12"><label>Total</label></div>
+                                <div class="col-md-4 col-sm-12 inputInline"> <input type="text" name="name" class="form-control"></div>
+                                
+                              </div>
+                            </div>
+
+                            
+                            <div class="row mb-2">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+</div>
+
+</div>
+</div>
+</div>
+<script src="js/cargavistaparcial.js"></script>
+<script src="js/combosaninadoscitas.js"></script>
+
+
+<input type="hidden" id="hdnBaseUrl" value="" />
+</div>
+</div>
+
+</div><!-- /.col -->
+</div><!-- /.row -->
+</div><!-- /.container-fluid -->
+</div>
+
+
+<!-- Main content -->
+<!-- /.Left col -->
+<!-- right col (We are only adding the ID to make the widgets sortable)-->
+<!-- right col -->
+</div>
+<!-- /.row (main row) -->
+<!-- /.content -->
+<!-- /.content-wrapper -->
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+  <!-- Control sidebar content goes here -->
+</aside>
+<!-- /.control-sidebar -->
+</div>
+
+
+<!-- ./wrapper -->
+<!-- jQuery -->
+<script src="Content/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="Content/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="Content/plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="Content/plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="Content/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="Content/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="Content/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="Content/plugins/moment/moment.min.js"></script>
+<script src="Content/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="Content/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="Content/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="Content/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="Content/dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="Content/dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="Content/dist/js/demo.js"></script>
+
+<!--buscar-->
+<script src="Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="Content/plugins/datatables/jquery.dataTables.js"></script>
+<script src="Content/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<script src="js/pagination.js"></script>
+<script src="js/accordion.js"></script>
+<script src="js/profile-picture.js"></script>
+
+
+
+
+
+<script src="lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+
+</body>
+</html>
